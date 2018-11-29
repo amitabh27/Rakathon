@@ -166,7 +166,35 @@ There are two software sub-modules involved here namely:<br>
 
  
 <li><b>	Technology Stack:</b><br>
- <ul>
-
-</ul>
-  
+<ul>
+  <li><b> Visual Recognition Tool  : NodeJS Project </b></li>
+  <ul>
+     <li>Server-Type : REST</li>
+     <li>Programming Language : NodeJS with Express Framework (REST Server + Web App)</li>
+     <li>App : NodeJS App</li>
+     <li>Database : MongoDB hosted on MLAB </li>
+     <li>Hosted : Localhost Server </li>
+     <li>Major API Endpoint : http://localhost:3000/dataoperators/dataoperator</li>
+    <li> 3rd Party APIs used : Aws Recognition Services like detectLabels(),detectText(),recogniseCelebrities(). AWS Translate Service,AWS Comprehend Service like detectKeyphrases() </li>
+  </ul>
+  <li><b> Recommendation Engine: </b></li>
+  <ul>
+     <li>Server-Type : Python Project (REST Server)</li>
+     <li>Programming Language : Python</li>
+     <li>App : Flask App</li>
+     <li>Hosted : Localhost Server </li>
+     <li>Database : MongoDB hosted on MLAB </li>
+     <li>Major API Endpoint : http://localhost:5000/recommendations/labels/keyphrases/training_parameter</li>
+    <li> Machine Learning Models used : LDA and TF-IDF along with the search queries powered by Elastic Search Engine</li>
+  </ul> 
+  <li><b> Elastic Search Engine: Lucene Based</b></li>
+  <ul>
+     <li>Server-Type : Java Project (REST Server)</li>
+     <li>Programming Language : Java</li>
+     <li>App : Java web app</li>
+     <li>Hosted : Single Node Cluster running on Localhost Server on port 9200</li>
+     <li>Database : MongoDB hosted on MLAB </li>
+     <li>Major API Endpoint : http://localhost:9200</li>
+    <li> Search Queries : search() and multi_search() working on index built on top of catalog of products. /li>
+  </ul> 
+  </ul>  
