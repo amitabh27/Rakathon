@@ -37,7 +37,7 @@ The major problems that we were able to identify are as follows:
 <h2>Proposed Solution:</h2>
 As a unified software solution, we present the product AIRA (Analytical Dashboard + Image based Recommender + Alexa skill) Engine which consist of three software modules:<br>
 
-<h3>1. SOFTWARE MODULE – CAMPAIGN ANALYZER:</h3>
+<h3>1. SOFTWARE MODULE – CAMPAIGN ANALYZER:</h3><hr>
 <ul>
 <li>The social media websites that we are targeting are:<br>
 <ul>  
@@ -102,7 +102,7 @@ As a unified software solution, we present the product AIRA (Analytical Dashboar
 </ul>
 </ul>
 
-<h3>2. SOFTWARE MODULE – IMAGE BASED RECOMMENDATION:</h3>
+<h3>2. SOFTWARE MODULE – IMAGE BASED RECOMMENDATION:</h3><hr>
 
 There are two software sub-modules involved here namely:<br>
 
@@ -205,7 +205,7 @@ There are two software sub-modules involved here namely:<br>
   </ul>  
 
 
-<h3>3. SOFTWARE MODULE : Alexa Skill Voice based bargaing assistant for E-commerce</h3>
+<h3>3. SOFTWARE MODULE : Alexa Skill Voice based bargaing assistant for E-commerce</h3><hr>
 <ul>
 <li>With the advances in voice enabled devices like Amazon’s Echo and Google Home, the customers of these devices prefer using them for many purposes, but voice enabled shopping via ecommerce sites is an area still unexplored
 <li>We propose to build an Alexa skill that will enable the user to buy products via ecommerce sites directly by using their Alexa enabled devices
