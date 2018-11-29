@@ -1,5 +1,5 @@
 # Rakathon
-<b>AIRA - Software Solution for Next Generation E-commerce.<b><br>
+AIRA - Software Solution for Next Generation E-commerce.<br>
 <ul>
   <li><b>A </b>- Analytical Dashboard</li>
   <li><b>I </b>- Image Based</li>
@@ -7,4 +7,145 @@
   <li><b>A </b>- Alexa Skill</li>
 </ul>
 
+<h2> Problem Statement:</h2>
+The major problems that we were able to identify are as follows: 
+
+<h3>1. Campaign Analyzer:</h3>
+<ul>
+<li>Every E-commerce firm runs campaigns on different social media websites in order to promote their flash sales or product launches under collaboration with other product companies.<br>
+<li>Each of these social networking websites have got their own analytical dashboard in order to analyse how well the campaign is doing in terms of views, likes, dislikes, post reachability, unique visitors etc<br>
+<li>But for the data analysts at the E-commerce firm it becomes difficult to collectively analyse the same which leads to the need of having a social analytical dashboard which could pull real time data from these websites and come up with the necessary data visualizations thus making it easier for the e-commerce firm.<br>
+<li><b>Why there is a need of Unified Dashboard?</b><br>
+<ul>
+<li>It’s important to keep track of how well your campaigns are doing on different social media websites. Usually it might do good enough one but not on the other.</li>
+<li>So, the firm needs to have insights on where the campaign is doing good to power their decisions in terms of where to put more money to promote their campaigns and how much!</li>
+</ul>
+</ul>
+
+<h3>2.Image Based Recommendation:</h3>
+<ul>
+<li>Currently the process of searching on E-commerce websites is query based. Most of the internal search engines run on text-based queries and rely on the keywords or tags used with the product image in order to be picked up for the user.<br>
+<li>The efficiency of such a model relies on the skill-level of the domain-expert who is responsible for providing the right set of keywords for every product’s image in the catalogue so that it gets picked up by the Recommendation Engine when the user issues a query on the user interface of the app/website of E-commerce firm.<br>
+<li>We propose an Image based Recommender which will try to extract the product features from the multiple images of the product that are fed to it.<br>
+<li>Why there is a need of Image based Recommender?<br>
+<ul>
+<li>Reduces the human intervention while uploading the catalogue of products to the website.</li>
+<li>More accurate and precise recommendations.</li>
+</ul>
+</ul>
+
+<h2>Proposed Solution:</h2>
+As a unified software solution, we present the product AIRA (Analytical Dashboard + Image based Recommender + Alexa skill) Engine which consist of three software modules:<br>
+
+<h3>1. SOFTWARE MODULE – CAMPAIGN ANALYZER:</h3>
+<ul>
+<li>The social media websites that we are targeting are:<br>
+<ul>  
+<li>Youtube<br>
+<li>Twitter<br>
+<li>Facebook<br>
+<li>Google analytics for the E-commerce website pages<br>
+</ul>
+<li>The Data Visualizations the dashboard will have are:<br><br>
+<ul>
+
+<li>Twitter Based:<br>
+<ul>
+<li>What are the Named Entities people are referring to while tweeting about your campaign (Named Entity Recognition).</li>
+<li>What are the top positive and negative tweets about your campaign</li>
+<li>Data visualisations depicting sentiment analysis about the campaign</li>
+</ul>
+</li>
+<li>Youtube Based:<br>
+<ul>
+<li>Video Length v/s likes data visualisations</li>
+<li>Views based data visualisations across different videos for the same campaign</li>
+<li>Most Liked and Most disliked videos</li>
+</ul>
+</li>
+<li>Facebook based:<br>
+<ul>
+<li>Likes distribution across posts.</li>
+<li>Post Reachability</li>
+<li>Most viewed posts</li>
+</ul>
+</li>
+<li>Google Analytics based:<br>
+<ul>
+<li>Number of unique visitors for every page of the E-commerce Website.</li>
+<li>Visitors plotted across time duration for every page.</li>
+</ul>
+</ul>
+</li>
+<li>Benefits of such a dashboard:</b><br>
+<ul>
+
+<li>To capture user’s journey from seeing the campaign advertisement to buying a product.</li>
+<li>Aggregating and Summarising the data spread across different social networking websites.</li>
+<li>Presenting the data insights in a meaningful and human-readable format thus making the job easier for management people.</li>
+<li>Helping to solve questions like where to spend and how much to spend?</li>
+<li>Calculating KPIs (Key Performance Indicator).</li>
+</ul>
+
+<li> <b>Architecture of the Software Module:</b><br>
+ (Check the attached Document for Software Architecture)<br>
+ 
+
+<li> <b>Technology Stack:</b><br>
+<ul>
+<li><b>Data Aggregation (Data Source in above figure):</b> Twitter Streaming APIs, Youtube REST Reporting APIs, Facebook Graph APIs, Google Analytics data.</li>
+<li><b>Data Analysis (Using AWS Analytics Services):</b> Amazon Kinesis as a data ingestion technology, S3 buckets for Storage, Athena for population data into tables and running queries.</li>
+<li><b>Data Visualisation (Using AWS Quicksight):</b> It has got all kinds of different data visualisations to present data analysis in a human readable form and generate stories/dashboards for non-technical people.</li>
+<li><b>Deployment: </b>AWS Cloud.</li>
+</ul>
+</ul>
+
+<h3>2. SOFTWARE MODULE – IMAGE BASED RECOMMENDATION:</h3>
+
+There are two software sub-modules involved here namely:<br>
+
+
+<h4>Catalogue Building Module:</h4>
+
+<ul>
+<li>This is the phase where in the data operator uploads multiple images of the product from the shopkeeper on the E-commerce website for sale. These photos include images of the actual product and packaging box.<br>
+<li>The data operator does so via a User Interface which allows him to upload multiple images of a product.<br>
+<li>Now for each of the image, we do the following:<br>
+<ul>
+<li>
+<b>AWS-Rekognition Services</b> are applied to the image in order to extract the information contained in the image.<br>
+<ul>
+<li><b>detectLabels():</b> Detects the instances of real world entities in an image.<br></li>
+<li><b>detectText(): </b>To extract the text present in images irrespective of the language. To extract information present on the packaging of the product.<br></li>
+<li><b>recogniseCelebrities():</b> To identify if any celebrity is associated with the product whose image might be present on the packaging material.<br></li>
+</ul>
+</li>
+<li><b>AWS-Translate Services</b> to translate the retrieved information into English Language.<br></li>
+<li><b>AWS-Comprehend Services</b> to identify the keywords and Named Entities from translated information.<br></li>
+</ul>
+<li>Once the information is extracted from the images, the information extrcated gets stored in the database.<br>
+<li>All this happens on a single click, when the data operator uploads the images of the product.<br>
+</ul>
+
+<h3>•	User Interaction Module:</h3>
+
+<ul>
+<li>Once we have augmented the images with the information contained in them, its time to use the same for generating the recommendations for the user.<br>
+<li>The User interface is pretty simple wherein initially the user is presented with few random product images and once he expresses his interest by liking one of them, the clustering algorithm goes back to the database in order to find products with information similar to the one liked by the user.<br>
+
+
+<li><b>Architecture of Catalogue Building Module:</b> <br>
+
+
+
+<li><b>Design of the User Interface:</b><br>
+o	The UI on the e-commerce website will be designed such that when the user expresses his interest towards a product by liking the image then the clustering algorithm will perform a scan on the DB to find products whose keywords provide a good match against the product selected and those will be recommended to  the user.<br>
+
+
+
+ 
+<li><b>	Technology Stack:</b><br>
+ <ul>
+
+</ul>
   
