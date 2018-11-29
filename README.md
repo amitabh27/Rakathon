@@ -165,7 +165,7 @@ There are two software sub-modules involved here namely:<br>
 
 <li><b>Architecture of User Interface powered by Recommender:</b> <br>
   <img src="https://i.imgur.com/AYWtKcJ.png"><br>
- <li><b>User interface screenshots:</b> <br> 
+ <li><b>User interface screenshots:</b> <br> <br>
  <img src="https://i.imgur.com/xsQMljU.png"><br>
    <img src="https://i.imgur.com/sTWohGR.png"><br>
  
@@ -243,7 +243,7 @@ There are two software sub-modules involved here namely:<br>
  
  
 <li><b>	Architecture of Alexa Skill :</b><br>  
-  <li><b>	Admin Dashboard of Alexa Skill :</b><br> 
+  <li><b>	Admin Dashboard of Alexa Skill :</b><br> <br>
     <img src="https://i.imgur.com/7AepC7G.png">
 </ul>  
 
