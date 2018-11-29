@@ -88,7 +88,7 @@ As a unified software solution, we present the product AIRA (Analytical Dashboar
 </ul>
 
 <li> <b>Architecture of the Software Module:</b><br>
- (Check the attached Document for Software Architecture)<br>
+<br>
  
 
 <li> <b>Technology Stack:</b><br>
@@ -122,12 +122,16 @@ There are two software sub-modules involved here namely:<br>
 </li>
 <li><b>AWS-Translate Services</b> to translate the retrieved information into English Language.<br></li>
 <li><b>AWS-Comprehend Services</b> to identify the keywords and Named Entities from translated information.<br></li>
+   <ul>
+     <li>detectKeyphrases() from extracted text.
+     <li>detectedEntitites() from Extracted text.
+  </ul>
 </ul>
 <li>Once the information is extracted from the images, the information extrcated gets stored in the database.<br>
 <li>All this happens on a single click, when the data operator uploads the images of the product.<br>
 </ul>
 
-<h3>•	User Interaction Module:</h3>
+<h4>User Interaction Module:</h4>
 
 <ul>
 <li>Once we have augmented the images with the information contained in them, its time to use the same for generating the recommendations for the user.<br>
@@ -139,7 +143,24 @@ There are two software sub-modules involved here namely:<br>
 
 
 <li><b>Design of the User Interface:</b><br>
-o	The UI on the e-commerce website will be designed such that when the user expresses his interest towards a product by liking the image then the clustering algorithm will perform a scan on the DB to find products whose keywords provide a good match against the product selected and those will be recommended to  the user.<br>
+<ul>
+<li>The UI on the e-commerce website will be designed such that when the user expresses his interest towards a product by liking the image then the Recommendation Engine will perform a scan on the DB to find products whose keywords provide a good match against the product selected and those will be recommended to  the user.<br>
+<li><h6>LDA - Latent Dirichlet Allocation Model : </h6></li>
+  <ul>
+    <li> Motivation : LDA is a topic modelling algorithm which tries to cluster images based on the extracted text from images.</li>
+    <li> Outcome : Product images with similar textual descriptions</li>
+  </ul>
+  <li><h6>TF-IDF - TermFrequency - InverseDocumentFrequency Model : </h6></li>
+  <ul>
+    <li> Motivation : TF-IDF is a document clustering technique which tries to identify most similar documents to the sample document by generating vectorize representations and then using cosine similarity to measure similarity percentage.</li>
+    <li>Outcome : Product images with similar textual descriptions</li>
+     </ul>
+  <li><h6>Elastic Search Engine : Running on a Single Node Cluster </h6></li>
+  <ul>
+    <li> Motivation : Using search() and multi_search() services of fast paced elastic search which is working on an index built on the catalog of products.</li>
+    <li>Outcome : Product images with similar labels</li>
+     </ul>
+ </ul>
 
 
 
