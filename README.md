@@ -177,7 +177,7 @@ There are two software sub-modules involved here namely:<br>
      <li>Major API Endpoint : http://localhost:3000/dataoperators/dataoperator</li>
     <li> 3rd Party APIs used : Aws Recognition Services like detectLabels(),detectText(),recogniseCelebrities(). AWS Translate Service,AWS Comprehend Service like detectKeyphrases() </li>
   </ul>
-  <li><b> Recommendation Engine: </b></li>
+  <li><b> Recommendation Engine : Python Project</b></li>
   <ul>
      <li>Server-Type : Python Project (REST Server)</li>
      <li>Programming Language : Python</li>
@@ -187,7 +187,7 @@ There are two software sub-modules involved here namely:<br>
      <li>Major API Endpoint : http://localhost:5000/recommendations/labels/keyphrases/training_parameter</li>
     <li> Machine Learning Models used : LDA and TF-IDF along with the search queries powered by Elastic Search Engine</li>
   </ul> 
-  <li><b> Elastic Search Engine: Lucene Based</b></li>
+  <li><b> Elastic Search Engine - Lucene Based : Java Project</b></li>
   <ul>
      <li>Server-Type : Java Project (REST Server)</li>
      <li>Programming Language : Java</li>
@@ -198,3 +198,47 @@ There are two software sub-modules involved here namely:<br>
     <li> Search Queries : search() and multi_search() working on index built on top of catalog of products. /li>
   </ul> 
   </ul>  
+
+
+<h3>3. SOFTWARE MODULE : Alexa Skill Voice based bargaing assistant for E-commerce</h3>
+<ul>
+<li>With the advances in voice enabled devices like Amazon’s Echo and Google Home, the customers of these devices prefer using them for many purposes, but voice enabled shopping via ecommerce sites is an area still unexplored
+<li>We propose to build an Alexa skill that will enable the user to buy products via ecommerce sites directly by using their Alexa enabled devices
+<li>One of the major challenge in bringing the offline customers to online shopping is lack of bargain on ecommerce site, but our skill will remove that obstacle by giving voice chat enabled bargain feature based on a complex algorithm that will benefit both the customers and the ecommerce
+  <li><b>Benefits of Alexa Skill for ecommerce?</b>
+ <ul>   
+<li>The skill will help the organization to target the growing customer base that possess voice enabled smart devices
+<li>The bargain feature will help the organization to target the major sector of offline shoppers, that are reluctant to buy online by giving them the offline retail shop
+<li>With the personalized conversation between Alexa and customer, the buyer will gain trust in the organization.  
+    </ul>
+  <li><b> Sample Intents </b>    
+   <ul>
+     <li>Checking Price of a Product
+     <li>Checking cart details
+     <li>Buying of goods
+      <li>Cancelling of goods, asking for refund and return of goods
+       <li>Checking Order Status
+         <li>Bargain on the price offered. Bargaining algorithm takes folowing parameters into account while bargaining:
+         <ul>
+           <li>Frequent user : whther he has bought atleast 3 times in last one month
+            <li>Product popularity: The product being bought is a best seller or not in the region user belongs to.
+              <li>Seller Earnings : If seller has registered multiple units of that product and for quite some time not even a single unit has been sold.
+         </ul>
+   </ul>  
+<li><b>	Technology Stack:</b><br>
+
+  <ul>
+     <li>Server-Type : REST</li>
+     <li>Programming Language : NodeJS with Express Framework (REST Server + Web App)</li>
+     <li>App : NodeJS App</li>
+     <li>Database : MongoDB hosted on MLAB </li>
+     <li>Hosted : AWS Lambda</li>
+    <li> 3rd Party APIs used : MLAB APIs, Nexmo Messaging APIs, Node Mailer Emailing APIs, Google Maps APIs, Alexa Cards for Alexa App </li>
+  </ul>    
+<li><b>	Screenshots of alexa Conversation:</b><br> 
+ 
+ 
+<li><b>	Architecture of Alexa Skill :</b><br>  
+</ul>  
+
+  
