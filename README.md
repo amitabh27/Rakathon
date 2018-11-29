@@ -88,6 +88,8 @@ As a unified software solution, we present the product AIRA (Analytical Dashboar
 </ul>
 
 <li> <b>Architecture of the Software Module:</b><br>
+  <img src="https://i.imgur.com/Sh1ewKn.png"><br>
+   <img src="https://i.imgur.com/FaJzWCs.png">
 <br>
  
 
@@ -139,8 +141,7 @@ There are two software sub-modules involved here namely:<br>
 
 
 <li><b>Architecture of Catalogue Building Module:</b> <br>
-
-
+<img src="https://i.imgur.com/aUpCnqI.png"><br>
 
 <li><b>Design of the User Interface:</b><br>
 <ul>
@@ -162,8 +163,12 @@ There are two software sub-modules involved here namely:<br>
      </ul>
  </ul>
 
-
-
+<li><b>Architecture of User Interface powered by Recommender:</b> <br>
+  <ul>
+    <li><b>Recommendation Engine : </b><br><img src="">
+    <li><b>LDA Model:</b><br><img src="">
+      <li><b>TF-IDF Model:</b><br><img src="">
+  </ul>
  
 <li><b>	Technology Stack:</b><br>
 <ul>
