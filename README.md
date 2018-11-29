@@ -164,7 +164,7 @@ There are two software sub-modules involved here namely:<br>
  </ul>
 
 <li><b>Architecture of User Interface powered by Recommender:</b> <br>
-  <img src="https://imgur.com/AYWtKcJ">
+  <img src="https://i.imgur.com/AYWtKcJ.png">
  
  
 <li><b>	Technology Stack:</b><br>
