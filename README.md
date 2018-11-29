@@ -164,11 +164,8 @@ There are two software sub-modules involved here namely:<br>
  </ul>
 
 <li><b>Architecture of User Interface powered by Recommender:</b> <br>
-  <ul>
-    <li><b>Recommendation Engine : </b><br><img src="">
-    <li><b>LDA Model:</b><br><img src="">
-      <li><b>TF-IDF Model:</b><br><img src="">
-  </ul>
+  <img src="https://imgur.com/AYWtKcJ">
+ 
  
 <li><b>	Technology Stack:</b><br>
 <ul>
