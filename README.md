@@ -243,6 +243,7 @@ There are two software sub-modules involved here namely:<br>
  
  
 <li><b>	Architecture of Alexa Skill :</b><br>  
+  <img src="https://i.imgur.com/bvUxRem.png"><br>
   <li><b>	Admin Dashboard of Alexa Skill :</b><br> <br>
     <img src="https://i.imgur.com/7AepC7G.png">
 </ul>  
