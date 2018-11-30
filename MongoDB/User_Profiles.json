@@ -1,0 +1,209 @@
+{
+    "_id": {
+        "$oid": "5c00219a1f6e4f34a8bac153"
+    },
+    "users": [
+        {
+            "name": "tarun",
+            "emailid": "trnpandey6@gmail.com",
+            "mobileno": "8587973986",
+            "address": "26/C, Hosur Rd, Electronics City Phase 1, Electronic City, Bengaluru, Karnataka 560100",
+            "option": [
+                [
+                    {
+                        "number": "123",
+                        "name": "dove shampoo small bottle",
+                        "date": "26-11-2018",
+                        "bill": "173 Indian Rupees",
+                        "quantity": "1",
+                        "status": "cancel"
+                    },
+                    {
+                        "number": "211",
+                        "name": "galaxy edge",
+                        "date": "26-09-2018",
+                        "bill": "78000 Indian Rupees",
+                        "quantity": "1",
+                        "status": "cancelled"
+                    },
+                    {
+                        "number": "456",
+                        "name": "fully automatic lg washing machine",
+                        "date": "28-11-2018",
+                        "bill": "17300 Indian Rupees",
+                        "quantity": "1",
+                        "status": "shipped"
+                    },
+                    {
+                        "number": "3439",
+                        "name": "galaxy edge",
+                        "date": "29-11-2018",
+                        "bill": "78000 Indian Rupees",
+                        "quantity": "-4,2,4,5",
+                        "status": "shipped"
+                    },
+                    {
+                        "number": "1724",
+                        "name": "galaxy edge",
+                        "date": "29-11-2018",
+                        "bill": "78000 Indian Rupees",
+                        "quantity": "-5,2,4,5",
+                        "status": "shipped"
+                    },
+                    {
+                        "number": "4124",
+                        "name": "galaxy edge",
+                        "date": "29-11-2018",
+                        "bill": "78000 Indian Rupees",
+                        "quantity": "-6,2,4,5",
+                        "status": "shipped"
+                    },
+                    {
+                        "number": "8057",
+                        "name": "galaxy edge",
+                        "date": "29-11-2018",
+                        "bill": "78000 Indian Rupees",
+                        "quantity": "1",
+                        "status": "shipped"
+                    },
+                    {
+                        "number": "3585",
+                        "name": "galaxy edge",
+                        "date": "29-11-2018",
+                        "bill": "78000 Indian Rupees",
+                        "quantity": "1",
+                        "status": "shipped"
+                    },
+                    {
+                        "number": "9174",
+                        "name": "galaxy edge",
+                        "date": "29-11-2018",
+                        "bill": "78000 Indian Rupees",
+                        "quantity": "1",
+                        "status": "shipped"
+                    },
+                    {
+                        "number": "7664",
+                        "name": "galaxy edge",
+                        "date": "29-11-2018",
+                        "bill": "78000 Indian Rupees",
+                        "quantity": "1",
+                        "status": "shipped"
+                    },
+                    {
+                        "number": "5975",
+                        "name": "galaxy edge",
+                        "date": "29-11-2018",
+                        "bill": "78000 Indian Rupees",
+                        "quantity": "1",
+                        "status": "shipped"
+                    },
+                    {
+                        "number": "9361",
+                        "name": "galaxy edge",
+                        "date": "29-11-2018",
+                        "bill": "78000 Indian Rupees",
+                        "quantity": "1",
+                        "status": "shipped"
+                    },
+                    {
+                        "number": "8511",
+                        "name": "galaxy edge",
+                        "date": "29-11-2018",
+                        "bill": "78000 Indian Rupees",
+                        "quantity": "1",
+                        "status": "shipped"
+                    }
+                ],
+                [
+                    {
+                        "name": "galaxy edge",
+                        "price": "78000 Indian Rupees",
+                        "quantity": "2"
+                    },
+                    {
+                        "name": "iphone 6 s",
+                        "price": "123000 Indian Rupees",
+                        "quantity": "1"
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "amitabh",
+            "emailid": "amitabh.tiwari27@gmail.com",
+            "mobileno": "9820364381",
+            "address": "Rakuten Enterprises,MG Road, Bangalore 560100,Karnataka",
+            "option": [
+                [
+                    {
+                        "number": "123",
+                        "name": "dove shampoo small bottle",
+                        "date": "26-11-2018",
+                        "bill": "173 Indian Rupees",
+                        "quantity": "1",
+                        "status": "cancel"
+                    },
+                    {
+                        "number": "211",
+                        "name": "galaxy edge",
+                        "date": "22-11-2018",
+                        "bill": "78000 Indian Rupees",
+                        "quantity": "1",
+                        "status": "shipped"
+                    }
+                ],
+                [
+                    {
+                        "name": "galaxy edge",
+                        "price": "78000 Indian Rupees",
+                        "quantity": "2"
+                    },
+                    {
+                        "name": "iphone 6 s",
+                        "price": "123000 Indian Rupees",
+                        "quantity": "1"
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "Rachit",
+            "emailid": "rkulkarni@gmail.com",
+            "mobileno": "9822164381",
+            "address": "PLOT NO.- 88, 39, 1, Palm Beach Rd, Sector 30A, Vashi, Navi Mumbai, Maharashtra 400705",
+            "option": [
+                [
+                    {
+                        "number": "123",
+                        "name": "dove shampoo small bottle",
+                        "date": "26-11-2018",
+                        "bill": "173 Indian Rupees",
+                        "quantity": "1",
+                        "status": "cancel"
+                    },
+                    {
+                        "number": "111",
+                        "name": "galaxy edge",
+                        "date": "12-11-2018",
+                        "bill": "78000 Indian Rupees",
+                        "quantity": "1",
+                        "status": "shipped"
+                    }
+                ],
+                [
+                    {
+                        "name": "galaxy edge",
+                        "price": "78000 Indian Rupees",
+                        "quantity": "2"
+                    },
+                    {
+                        "name": "iphone 6 s",
+                        "price": "123000 Indian Rupees",
+                        "quantity": "1"
+                    }
+                ]
+            ]
+        }
+    ]
+}

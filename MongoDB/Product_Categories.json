@@ -1,0 +1,167 @@
+{
+
+	"category": [{
+			"name": "electronics",
+			"subcat": [{
+					"name": "phones",
+					"brands": [{
+							"name": "samsung",
+							"products": [{
+									"name": "galaxy edge",
+									"desc": "The phone comes with a 5.10-inch touchscreen display with a resolution of 1440 pixels by 2560 pixels,2600mAh battery,3GB RAM,32GB Internal Storage, 16 Mega Pixel Front and 5 Mega Pixel Rear Camera.",
+									"price": "78000 Indian Rupees",
+									"url": "https://images-na.ssl-images-amazon.com/images/I/815Aay6NVhL._SY550_.jpg"
+
+								},
+								{
+									"name": "galaxy curve",
+									"desc": "The phone comes with a 5.10-inch touchscreen display with a resolution of 1440 pixels by 2560 pixels,2600mAh battery,6GB RAM,128 GB Internal Storage, 16 Mega Pixel Front and 5 Mega Pixel Rear Camera.",
+									"price": "98000 Indian Rupees",
+									"url": "https://images-na.ssl-images-amazon.com/images/I/815Aay6NVhL._SY550_.jpg"
+
+								}
+							]
+						},
+						{
+							"name": "apple",
+							"products": [{
+									"name": "iphone 6 s",
+									"desc": "The Apple iPhone 6s is powered by 1.84GHz dual-core processor and it comes with 2GB of RAM. The phone packs 128GB of internal storage that cannot be expanded. As far as the cameras are concerned, the Apple iPhone 6s packs a 12-megapixel primary camera on the rear and a 5-megapixel front shooter for selfies.",
+									"price": "123000 Indian Rupees",
+									"url": "https://images-na.ssl-images-amazon.com/images/I/81oHoPb-BeL._SY550_.jpg"
+
+								},
+								{
+									"name": "iphone 5",
+									"desc": "The Apple iPhone 5 is powered by 1.84GHz dual-core processor and it comes with 2GB of RAM. The phone packs 64GB of internal storage that cannot be expanded. As far as the cameras are concerned, the Apple iPhone 6s packs a 12-megapixel  primary camera on the rear and a 5-megapixel front shooter for selfies.",
+									"price": "103000 Indian Rupees",
+									"url": "https://images-na.ssl-images-amazon.com/images/I/81oHoPb-BeL._SY550_.jpg"
+
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "washing machines",
+					"brands": [{
+							"name": "samsung",
+							"products": [{
+									"name": "samsung fully automatic",
+									"desc": "Fully automatic top load washing machine with 6 KG capacity. Special features are  air turbo, auto restart, child lock, magic filter, tempered glass window, drum type - diamond drum, pulsator- center jet, water level - 5 levels",
+									"price": "18000 Indian Rupees",
+									"url": "https://images-na.ssl-images-amazon.com/images/I/318OEJCxfXL._AC_SY700_FMwebp_.jpg"
+
+								},
+								{
+									"name": "samsung semi authomatic",
+									"desc": "Semi automatic top load washing machine with 6 KG capacity. Special features are  air turbo, auto restart, child lock, magic filter, tempered glass window, drum type - diamond drum, pulsator- center jet, water level - 5 levels",
+									"price": "12000 Indian Rupees",
+									"url": "https://images-na.ssl-images-amazon.com/images/I/318OEJCxfXL._AC_SY700_FMwebp_.jpg"
+
+								}
+							]
+						},
+						{
+							"name": "LG",
+							"products": [{
+									"name": "LG fully automatic",
+									"desc": "Fully automatic front loading washing machine with Capacity 7 kg. Special Features are Variodrum, LED display and foam detection system, Unbalanced load detection and multiple water protection",
+									"price": "17300 Indian Rupees",
+									"url": "https://images-na.ssl-images-amazon.com/images/I/41kuHW33mdL._AC_SY700_FMwebp_.jpg"
+
+								},
+								{
+									"name": "LG semi automatic",
+									"desc": "Semi automatic front loading washing machine with Capacity 7 kg. Special Features are Variodrum, LED display and foam detection system, Unbalanced load detection and multiple water protection",
+									"price": "10200 Indian Rupees",
+									"url": "https://images-na.ssl-images-amazon.com/images/I/41kuHW33mdL._AC_SY700_FMwebp_.jpg"
+
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "groceries",
+			"subcat": [{
+					"name": "detergent",
+					"brands": [{
+							"name": "Ariel",
+							"products": [{
+									"name": "ariel detergent powder",
+									"desc": "It is a 500 gram pack",
+									"price": "260 Indian Rupees",
+									"url": "https://rukminim1.flixcart.com/image/550/550/jepzrm80/laundry-detergent/5/g/f/500-detergent-washing-powder-ariel-original-imaf3chz9zdqgfxu.jpeg"
+
+								},
+								{
+									"name": "ariel detergent liquid",
+									"desc": "It is a 500 ml bottle",
+									"price": "250 Indian Rupees",
+									"url": "https://rukminim1.flixcart.com/image/550/550/jamtevk0/laundry-detergent/c/n/s/750-matic-liquid-detergent-ariel-original-imafy65n5nhmhrrf.jpeg"
+
+								}
+							]
+						},
+						{
+							"name": "Surf Excel",
+							"products": [{
+									"name": "surf excel powder",
+									"desc": "It is a 400 gm pack",
+									"price": "190 Indian Rupees",
+									"url": "https://rukminim1.flixcart.com/image/832/832/j9fy7bk0/laundry-detergent/x/2/m/2-matic-front-load-detergent-powder-surf-excel-original-imaez6hu6fnjgqwa.jpeg"
+
+								},
+								{
+									"name": "surf excel liquid",
+									"desc": "It is a 500 ml bottle",
+									"price": "103000 Indian Rupees",
+									"url": "https://rukminim1.flixcart.com/image/550/550/j9n3ekw0/laundry-detergent/u/h/m/500-liquid-detergent-surf-excel-original-imaez6huvchtnzuf.jpeg"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Shampoo",
+					"brands": [{
+							"name": "Sunsilk",
+							"products": [{
+									"name": "sunsilk shampoo small bottle",
+									"desc": "It is a 250 ml bottle",
+									"price": "180 Indian Rupees",
+									"url": "https://rukminim1.flixcart.com/image/550/550/jesunbk0/shampoo/b/u/5/340-lusciously-thick-long-shampoo-sunsilk-original-imaez7gshy2tuhbe.jpeg"
+								},
+								{
+									"name": "sunsilk shampoo big bottle",
+									"desc": "It is a 500 ml bottle",
+									"price": "350 Indian Rupees",
+									"url": "https://rukminim1.flixcart.com/image/550/550/jesunbk0/shampoo/b/u/5/340-lusciously-thick-long-shampoo-sunsilk-original-imaez7gshy2tuhbe.jpeg"
+								}
+							]
+						},
+						{
+							"name": "Dove",
+							"products": [{
+									"name": "dove shampoo small bottle",
+									"desc": "It is a 250 ml bottle.",
+									"price": "173 Indian Rupees",
+									"url": "https://rukminim1.flixcart.com/image/550/550/jjd6aa80/shampoo/a/v/8/340-hair-fall-rescue-shampoo-dove-original-imaez6hvxrf886wm.jpeg"
+								},
+								{
+									"name": "dove shampoo big bottle",
+									"desc": "It is a 500 ml bottle.",
+									"price": "320 Indian Rupees",
+									"url": "https://rukminim1.flixcart.com/image/550/550/jjd6aa80/shampoo/a/v/8/340-hair-fall-rescue-shampoo-dove-original-imaez6hvxrf886wm.jpeg"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,108 @@
+{
+    "_id": {
+        "$oid": "5c015ed85d0e6536bec245d4"
+    },
+    "sellerID": "91",
+    "sellerName": "        Skylark Enterprises",
+    "sellerAddress": "        SEZ Un/it, Cessna Business Park, Kadubeesanahalli Village, Hobli, Sarjapur, Varthur Main Road, Marathahalli, Bengaluru, Karnataka 560087",
+    "products": [
+        {
+            "name": "galaxy edge",
+            "quantity": "3",
+            "date": "22-10-2018",
+            "last_updated": "30-11-2018",
+            "original_quantity": "4"
+        },
+        {
+            "name": "galaxy curve",
+            "quantity": "3",
+            "date": "22-9-2018",
+            "last_updated": "30-11-2018",
+            "original_quantity": "4"
+        },
+        {
+            "name": "samsung full automatic",
+            "quantity": "4",
+            "date": "22-11-2018",
+            "last_updated": "22-11-2018",
+            "original_quantity": "4"
+        },
+        {
+            "name": "LG full automatic",
+            "quantity": "5",
+            "date": "22-11-2018",
+            "last_updated": "22-11-2018",
+            "original_quantity": "4"
+        },
+        {
+            "name": "iphone 5",
+            "quantity": "2",
+            "date": "22-11-2018",
+            "last_updated": "22-11-2018",
+            "original_quantity": "4"
+        },
+        {
+            "name": "iphone 6 s",
+            "quantity": "3",
+            "date": "22-11-2018",
+            "last_updated": "22-11-2018",
+            "original_quantity": "4"
+        },
+        {
+            "name": "samsung semi automatic",
+            "quantity": "2",
+            "date": "22-11-2018",
+            "last_updated": "22-11-2018",
+            "original_quantity": "4"
+        },
+        {
+            "name": "LG semi automatic",
+            "quantity": "5",
+            "date": "22-11-2018",
+            "last_updated": "22-11-2018",
+            "original_quantity": "4"
+        },
+        {
+            "name": "ariel detergent powder",
+            "quantity": "2",
+            "date": "22-11-2018",
+            "last_updated": "22-11-2018",
+            "original_quantity": "4"
+        },
+        {
+            "name": "ariel detergent liquid",
+            "quantity": "3",
+            "date": "22-11-2018",
+            "last_updated": "22-11-2018",
+            "original_quantity": "4"
+        },
+        {
+            "name": "surf excel powder",
+            "quantity": "2",
+            "date": "22-11-2018",
+            "last_updated": "22-11-2018",
+            "original_quantity": "4"
+        },
+        {
+            "name": "surf excel liquid",
+            "quantity": "2",
+            "date": "22-11-2018",
+            "last_updated": "22-11-2018",
+            "original_quantity": "4"
+        },
+        {
+            "name": "sunsilk shampoo small bottle",
+            "quantity": "3",
+            "date": "22-11-2018",
+            "last_updated": "22-11-2018",
+            "original_quantity": "4"
+        },
+        {
+            "name": "sunsilk shampoo big bottle",
+            "quantity": "2",
+            "date": "22-11-2018",
+            "last_updated": "22-11-2018",
+            "original_quantity": "4"
+        }
+    ]
+}
