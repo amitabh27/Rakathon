@@ -242,7 +242,7 @@ There are two software sub-modules involved here namely:<br>
 </ul>  
   
 <b>	Video Demonstration of alexa Conversation:</b><br> 
-[![Watch the video](https://github.com/amitabh27/Rakathon/blob/master/repoMetadata/logo.png)](https://www.youtube.com/watch?v=EP5G0mf56pA&t=94s)
+[![Watch the video](https://github.com/amitabh27/Rakathon/blob/master/repoMetadata/logo.png)](https://www.youtube.com/watch?v=6u7Mi1PS4ro&feature=youtu.be)
  
 <ul> 
 <li><b>	Architecture of Alexa Skill :</b><br>  
