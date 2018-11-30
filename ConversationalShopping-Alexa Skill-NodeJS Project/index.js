@@ -1483,7 +1483,7 @@ request("https://api.mlab.com/api/1/databases/alexa_rakuten/collections/User_Pro
 
 			});
 			function apicall(item, cb) {
-				request('https://maps.googleapis.com/maps/api/directions/json?origin='+address_of_current_user+'&destination='+item+'&mode=driving&key=AIzaSyCweXwBZ82TU1ZdOCFoDFYhx9l75vh6E50', function (error, response, body) {
+				request('https://maps.googleapis.com/maps/api/directions/json?origin='+address_of_current_user+'&destination='+item+'&mode=driving&key=', function (error, response, body) {
 						if (!error && response.statusCode == 200) 
 						{
 						
