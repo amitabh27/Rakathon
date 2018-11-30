@@ -22,7 +22,7 @@ var upload = multer({ storage : storage }).array('userPhoto',3);
 
 var port = process.env.PORT || 5000;
 AWS.config.region = 'us-east-1';
-AWS.config.credentials = new AWS.Credentials("AKIAJPCPN4HXODBBXJ7A", "ChK3j9VAvR/UFW59kYOywnuvbmzsWQUBCmIh9tLM");
+AWS.config.credentials = new AWS.Credentials("", "");
 var mlabkey="0IUPta4Xti13RA5KsXbUItjhVK938r0t";
 
 
