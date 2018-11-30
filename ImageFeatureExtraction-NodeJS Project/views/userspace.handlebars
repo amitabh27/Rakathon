@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #2E8701;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+}
+
+.card {display:inline-block;}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+
+</style>
+<title>Rakuten</title>
+</head>
+<body>
+
+<ul>
+  <li><a href="dataoperatorspace">Data Operator Space</a></li>
+  <li><a class="active" href="userspace">User Space</a></li>
+   <li><a href="admin">Admin Space</a></li>
+  
+</ul>
+
+<div id="filediv" style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <h2>E-commerce Home Page</h2>
+  <p>
+  
+				<li>I don’t know what I want, but I’ll know it when I see it</li>
+				<li>I know what I want, but I don’t know what it’s called.</li>
+  
+   </p>
+   
+   <!------------------ Sample Products --------------------------------------------------------------------- -->
+	<div id="items">
+			<div class="card">
+			  <img src="../assets/images/brownformalshoes1.jpg" alt="John" style="width:50%">
+
+			 <p><button id="brownformalshoes1">Formal Shoes</button></p>
+			</div>
+			
+			<div class="card">
+			  <img src="../assets/images/bamboowindchain1.jpg" alt="John" style="width:50%">
+
+			 <p><button id="bamboowindchain1">Wind Chain</button></p>
+			</div>
+			
+			<div class="card">
+			  <img src="../assets/images/chandeliers1.jpg" alt="John" style="width:50%">
+
+			 <p><button id="chandeliers1">Chandeliers</button></p>
+			</div>
+			
+			<div class="card">
+			  <img src="../assets/images/closeup1.jpg" alt="John" style="width:50%">
+
+			 <p><button id="closeup1">Closeup</button></p>
+			</div>
+			<br><br>
+			<div class="card">
+			  <img src="../assets/images/dettol1.jpg" alt="John" style="width:50%">
+
+			 <p><button id="dettol1">Dettol Handwash</button></p>
+			</div>
+			
+			<div class="card">
+			  <img src="../assets/images/formalshirt1.jpg" alt="John" style="width:50%">
+
+			 <p><button id="formalshirt1">Formal Shirt</button></p>
+			</div>
+			
+			<div class="card">
+			  <img src="../assets/images/lux1.jpg" alt="John" style="width:50%">
+
+			 <p><button id="lux1">Lux</button></p>
+			</div>
+			
+			<div class="card">
+			  <img src="../assets/images/nivea1.jpg" alt="John" style="width:50%">
+
+			 <p><button id="nivea1">Nivea</button></p>
+			</div>
+			<br><br>
+			<div class="card">
+			  <img src="../assets/images/lays1.jpg" alt="John" style="width:50%">
+
+			 <p><button id="lays1">Lays</button></p>
+			</div>
+			
+			<div class="card">
+			  <img src="../assets/images/hideandseek1.jpg" alt="John" style="width:50%">
+
+			 <p><button id="hideandseek1">Hide & Seek</button></p>
+			</div>
+	</div>			
+   <!-- Ends Here---------------------------------------------------------------------------------------------- -->
+   
+</div>
+ 
+
+</body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+  <script>
+
+	$(document).on('click','button',function(){
+		var clicked=this.id;
+		clicked=clicked.substr(0,clicked.length-1);
+		
+		var mlaburl="https://api.mlab.com/api/1/databases/rakuten/collections/products?apiKey=0IUPta4Xti13RA5KsXbUItjhVK938r0t";
+		
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200)
+				{
+				
+					console.log("Mlab response has come:"+clicked);
+					var response = xhttp.responseText;
+					res=JSON.parse(response);
+					var keyphrases=" ";
+					var labels="  ";
+					var products=new Array();
+				
+					for(var i=0;i<res.length;i++)
+					{
+						if(res[i].productname == clicked)
+						{
+							labels=res[i].labels;
+							for(var j=0;j<res[i].keyphrases.length;j++)
+							{
+								
+								keyphrases=keyphrases+" "+res[i].keyphrases[j];
+								
+							}
+							break;
+						}
+						
+					}
+					//console.log("labels="+labels+"-->keyphrases="+keyphrases);
+					
+							var rec_server="http://localhost:5000/recommendations/"+labels+"/"+keyphrases+"/0"
+							var xhttp2 = new XMLHttpRequest();
+							xhttp2.onreadystatechange = function() {
+							if (this.readyState == 4 && this.status == 200)
+							{
+							
+									console.log("Recommendations have come");
+									var response = xhttp2.responseText;
+									res=JSON.parse(response);
+									console.log(JSON.stringify(res));
+									var a=0;
+									for(var i=0;i<res.articles.length;i++)
+									{
+										console.log("--->"+res.articles[i]);
+										if(res.articles[i]==clicked)
+										continue;
+									
+										var text="<div class=\"card\"><img src=\"../assets/images/"+res.articles[i]+"1.jpg"+"\" alt=\"John\" style=\"width:50%\"><p><button id=\""+res.articles[i]+"1"+"\">"+res.articles[i]+"</button></p></div>";
+										document.getElementById("items").innerHTML=text+document.getElementById("items").innerHTML;
+										
+										a++;
+										if(a%2 ==0 || (a-2)%4==0)
+										{//document.getElementById("items").innerHTML+="<br><br>";
+										}
+									}
+									
+									
+									
+							}
+							};
+							xhttp2.open("GET",rec_server,true);
+							xhttp2.send();
+					
+				}
+				};
+				xhttp.open("GET",mlaburl,true);
+				xhttp.send();	
+		
+	});
+
+  </script>
+</html>

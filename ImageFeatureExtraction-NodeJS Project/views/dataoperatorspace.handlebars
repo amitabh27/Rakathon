@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+
+
+#formdiv {
+  text-align: center;
+}
+#file {
+  color: green;
+  padding: 5px;
+  border: 1px dashed #123456;
+  background-color: #f9ffe5;
+}
+#img {
+  width: 17px;
+  border: none;
+  height: 17px;
+  margin-left: -20px;
+  margin-bottom: 191px;
+}
+.upload {
+  width: 100%;
+  height: 30px;
+}
+.previewBox {
+  text-align: center;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  float: left;
+}
+.previewBox img {
+  height: 150px;
+  width: 150px;
+  padding: 5px;
+  border: 1px solid rgb(232, 222, 189);
+}
+.delete {
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  width: 20px;
+  height:  20px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 12px;
+	}
+
+</style>
+<title>Rakuten</title>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="dataoperatorspace">Data Operator Space</a></li>
+  <li><a href="userspace">User Space</a></li>
+  <li><a href="admin">Admin Space</a></li>
+  
+</ul>
+
+<div id="filediv" style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <h2>Visual Recognition Tool</h2>
+  <p>Dashboard for Data Operators to upload product catalogue!</p>
+  <br><br>
+   <form id="uploadForm"
+          enctype="multipart/form-data"
+          action="/dataoperators/api/photo"
+          method="post">
+	  
+	  <label for="file-upload" class="custom-file-upload">
+    Custom Upload
+</label>
+      <input id="file-upload" type="file" name="userPhoto" onchange="preview_images();" multiple />
+      <input type="submit" value="Upload Image" name="submit">
+      <br>
+      <span id = "status"></span>
+    </form>
+	<br><br><br>
+	<div class="row" id="image_preview"></div>
+</div>
+ 
+
+</body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+  <script>
+  $(document).ready(function() {
+     $('#uploadForm').submit(function() {
+        $("#status").empty().text("");
+        $(this).ajaxSubmit({
+            error: function(xhr) {
+          status('Error: ' + xhr.status);
+            },
+            success: function(response) {
+        console.log(response)
+            $("#status").empty().text(response);
+            }
+    });
+    return false;
+    });    
+  });
+  </script>
+  <script>
+function preview_images() 
+{
+ var total_file=document.getElementById("file-upload").files.length;
+ for(var i=0;i<total_file;i++)
+ {
+  $('#image_preview').append("<div class='col-md-3'><img class='img-responsive' src='"+URL.createObjectURL(event.target.files[i])+"'></div>");
+ }
+
+}
+
+      
+
+        deletePreview = function (ele, i) {
+          "use strict";
+          try {
+            $(ele).parent().remove();
+            window.filesToUpload.splice(i, 1);
+          } catch (e) {
+            console.log(e.message);
+          }
+        }
+
+        $("#file-upload").on('change', function() {
+          "use strict";
+
+          // create an empty array for the files to reside.
+          window.filesToUpload = [];
+
+          if (this.files.length >= 1) {
+            $("[id^=image_preview]").remove();
+            $.each(this.files, function(i, img) {
+              var reader = new FileReader(),
+                newElement = $("<div id='image_preview" + i + "' class='previewBox'><img /></div>"),
+                deleteBtn = $("<span class='delete' onClick='deletePreview(this, " + i + ")'><span class=\".glyphicon .glyphicon-remove\"></span></span>").prependTo(newElement),
+                preview = newElement.find("img");
+
+              reader.onloadend = function() {
+                preview.attr("src", reader.result);
+                preview.attr("alt", img.name);
+              };
+
+              try {
+                window.filesToUpload.push(document.getElementById("file").files[i]);
+              } catch (e) {
+                console.log(e.message);
+              }
+
+              if (img) {
+                reader.readAsDataURL(img);
+              } else {
+                preview.src = "";
+              }
+
+              newElement.appendTo("#filediv");
+            });
+          }
+        });
+</script>
+</html>

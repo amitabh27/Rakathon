@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+select {
+  margin: 50px;
+  width: 150px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat #eee;
+}
+
+
+/* CAUTION: IE hackery ahead */
+
+
+select::-ms-expand { 
+    display: none; /* remove default arrow in IE 10 and 11 */
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    select {
+        background:none\9;
+        padding: 5px\9;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+
+
+#formdiv {
+  text-align: center;
+}
+#file {
+  color: green;
+  padding: 5px;
+  border: 1px dashed #123456;
+  background-color: #f9ffe5;
+}
+#img {
+  width: 17px;
+  border: none;
+  height: 17px;
+  margin-left: -20px;
+  margin-bottom: 191px;
+}
+.upload {
+  width: 100%;
+  height: 30px;
+}
+.previewBox {
+  text-align: center;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  float: left;
+}
+.previewBox img {
+  height: 150px;
+  width: 150px;
+  padding: 5px;
+  border: 1px solid rgb(232, 222, 189);
+}
+.delete {
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  width: 20px;
+  height:  20px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 12px;
+	}
+
+</style>
+<title>Rakuten</title>
+</head>
+<body>
+
+<ul>
+  <li><a href="dataoperatorspace">Data Operator Space</a></li>
+  <li><a  href="userspace">User Space</a></li>
+   <li><a class="active" href="admin">Admin Space</a></li>
+ 
+  
+</ul>
+
+<div id="filediv" style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <h2>Admin Dashboard</h2>
+  <p>Dashboard to add Ctegories,Sub-Categories,Brands and Products</p>
+  <br><br>
+   
+		<div id="initial">
+		<button id="prev1" type="submit" class="btn btn-default">Add Category</button>
+		<button id="prev2" type="submit" class="btn btn-default">Add Sub-category</button>
+		<button id="prev3" type="submit" class="btn btn-default">Add Brand</button>
+		<button id="prev4" type="submit" class="btn btn-default">Add Product</button>
+		</div>
+		<br><hr>
+		<div id="final">
+		</div>
+		
+	
+</div>
+ 
+
+</body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script>
+	
+	$("button").click(function() {
+		var clicked=this.id;
+		console.log("clicked="+clicked);
+		
+		if(clicked=="prev1")
+		{
+			console.log("prev1..");
+			document.getElementById("final").innerHTML="<div class=\"form-inline\" ><div class=\"form-group\"><label for=\"email\">Category :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label><input type=\"text\" class=\"form-control\" id=\"category_name\"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id=\"category\" type=\"submit\" class=\"btn btn-default\">Submit</button>";
+		}
+		else if(clicked=="prev2")
+		{
+			console.log("prev2..");
+
+			var names=new Array();
+			var mlaburl="https://api.mlab.com/api/1/databases/alexa_rakuten/collections/Product_Categories?apiKey=wMQYkvf9YVpBoYT92w4ZNXJFGxVgY58x";
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200)
+				{
+							console.log("Mlab response has come:"+clicked);
+							var response = xhttp.responseText;
+							res=JSON.parse(response);
+							
+							var dropdown="<select id=\"category\">";
+							for(var i=0;i<res[0].category.length;i++)
+							{
+							if(i==0)
+							dropdown+="<option selected value=\""+res[0].category[i].name+"\">"+res[0].category[i].name+"</option>";
+							else
+							dropdown+="<option  value=\""+res[0].category[i].name+"\">"+res[0].category[i].name+"</option>";
+							}
+							dropdown+="</select>";
+							
+							
+							document.getElementById("final").innerHTML="<div class=\"form-inline\" ><div class=\"form-group\"><label for=\"email\">Category :&nbsp;&nbsp; </label>"+dropdown+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for=\"email\">Sub-Category :&nbsp;&nbsp; </label><input type=\"text\" class=\"form-control\" id=\"subcategory_name\"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button id=\"subcategory\" type=\"submit\" class=\"btn btn-default\">Submit</button><br><hr>";
+							
+				}
+				};
+				xhttp.open("GET",mlaburl,true);
+				xhttp.send();	
+			
+		}
+		else if(clicked=="prev3")
+		{
+		
+				var names=new Array();
+				var mlaburl="https://api.mlab.com/api/1/databases/alexa_rakuten/collections/Product_Categories?apiKey=wMQYkvf9YVpBoYT92w4ZNXJFGxVgY58x";
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200)
+				{
+							console.log("Mlab response has come:"+clicked);
+							var response = xhttp.responseText;
+							res=JSON.parse(response);
+							
+							var dropdown1="<select id=\"subcategory1\">";
+							var dropdown2="<select id=\"subcategory2\">";
+							
+							for(var i=0;i<res[0].category.length;i++)
+							{
+							if(i==0)
+							dropdown1+="<option selected value=\""+res[0].category[i].name+"\">"+res[0].category[i].name+"</option>";
+							else
+							dropdown1+="<option  value=\""+res[0].category[i].name+"\">"+res[0].category[i].name+"</option>";
+							
+							
+								for(var j=0;j<res[0].category[i].subcat.length;j++)
+								{
+								if(j==0 && i==0)
+								dropdown2+="<option selected value=\""+res[0].category[i].subcat[j].name+"\">"+res[0].category[i].subcat[j].name+"</option>";
+								else
+								dropdown2+="<option  value=\""+res[0].category[i].subcat[j].name+"\">"+res[0].category[i].subcat[j].name+"</option>";
+								}
+							
+							}
+							dropdown1+="</select>";
+							dropdown2+="</select>";
+							
+							
+							document.getElementById("final").innerHTML="<div class=\"form-inline\" ><div class=\"form-group\"><label for=\"email\">Category :&nbsp;&nbsp; </label>"+dropdown1+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for=\"email\">Sub-category :&nbsp;&nbsp; </label>"+dropdown2+"&nbsp;&nbsp;&nbsp;&nbsp;<label for=\"email\">Brand :&nbsp;&nbsp; </label><input type=\"text\" class=\"form-control\" id=\"brand_name\"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button id=\"brand\" type=\"submit\" class=\"btn btn-default\">Submit</button><br><hr>";
+							
+				}
+				};
+				xhttp.open("GET",mlaburl,true);
+				xhttp.send();
+		
+		}
+		else if(clicked=="prev4")
+		{
+				var names=new Array();
+				var mlaburl="https://api.mlab.com/api/1/databases/alexa_rakuten/collections/Product_Categories?apiKey=wMQYkvf9YVpBoYT92w4ZNXJFGxVgY58x";
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200)
+				{
+							console.log("Mlab response has come:"+clicked);
+							var response = xhttp.responseText;
+							res=JSON.parse(response);
+							
+							var dropdown1="<select id=\"product1\">";
+							var dropdown2="<select id=\"product2\">";
+							var dropdown3="<select id=\"product3\">";
+							
+							for(var i=0;i<res[0].category.length;i++)
+							{
+							if(i==0)
+							dropdown1+="<option selected value=\""+res[0].category[i].name+"\">"+res[0].category[i].name+"</option>";
+							else
+							dropdown1+="<option  value=\""+res[0].category[i].name+"\">"+res[0].category[i].name+"</option>";
+							
+							
+								for(var j=0;j<res[0].category[i].subcat.length;j++)
+								{
+								if(j==0 && i==0)
+								dropdown2+="<option selected value=\""+res[0].category[i].subcat[j].name+"\">"+res[0].category[i].subcat[j].name+"</option>";
+								else
+								dropdown2+="<option  value=\""+res[0].category[i].subcat[j].name+"\">"+res[0].category[i].subcat[j].name+"</option>";
+								
+									
+											for(var k=0;k<res[0].category[i].subcat[j].brands.length;k++)
+											{
+											if(j==0 && i==0 && k==0)
+											dropdown3+="<option selected value=\""+res[0].category[i].subcat[j].brands[k].name+"\">"+res[0].category[i].subcat[j].brands[k].name+"</option>";
+											else
+											dropdown3+="<option  value=\""+res[0].category[i].subcat[j].brands[k].name+"\">"+res[0].category[i].subcat[j].brands[k].name+"</option>";
+
+											}
+								
+								}
+							
+							}
+							dropdown1+="</select>";
+							dropdown2+="</select>";
+							dropdown3+="</select>";
+							
+							
+							document.getElementById("final").innerHTML="<div class=\"form-inline\" ><div class=\"form-group\"><label for=\"email\">Category :&nbsp;&nbsp; </label>"+dropdown1+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for=\"email\">Sub-category :&nbsp;&nbsp; </label>"+dropdown2+"&nbsp;&nbsp;&nbsp;&nbsp;<label for=\"email\">Brand :&nbsp;&nbsp; </label>"+dropdown3+"<br><br><label for=\"email\">Product :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label><input type=\"text\" class=\"form-control\" id=\"product_name\"><br><br><label for=\"email\">Description  &nbsp;</label><input type=\"text\" class=\"form-control\" id=\"product_desc\"><br><br><label for=\"email\">Price :&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type=\"text\" class=\"form-control\" id=\"product_price\"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button id=\"product\" type=\"submit\" class=\"btn btn-default\">Submit</button><br><hr>";
+							
+				}
+				};
+				xhttp.open("GET",mlaburl,true);
+				xhttp.send();
+		}
+		else
+		console.log("No match for button click...");
+		
+		
+	});
+	
+	
+$(document).on('click','#category',function(){
+     
+			console.log("category clicked");
+			var val=document.getElementById("category_name").value;
+			var url="http://localhost:3000/dataoperators/addcategory/"+val;
+			
+			
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200)
+				{
+								
+					document.getElementById("final").innerHTML+="<p>Success!</p>";		
+							
+				}
+				};
+				xhttp.open("GET",url,true);
+				xhttp.send();
+});
+
+$(document).on('click','#subcategory',function(){
+     
+			console.log("subcategory clicked");
+			var val=document.getElementById("category").value;
+			var val1=document.getElementById("subcategory_name").value;
+			console.log("val1="+val1+" val="+val);
+			var url="http://localhost:3000/dataoperators/addsubcategory/"+val+"/"+val1;
+			
+			console.log(url);
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200)
+				{
+								
+					document.getElementById("final").innerHTML+="<p>Success!</p>";		
+							
+				}
+				};
+				xhttp.open("GET",url,true);
+				xhttp.send();
+});
+
+$(document).on('click','#brand',function(){
+     
+			console.log("brand clicked");
+			var val=document.getElementById("subcategory1").value;
+			var val1=document.getElementById("subcategory2").value;
+			var val2=document.getElementById("brand_name").value;
+			var url="http://localhost:3000/dataoperators/addbrand/"+val+"/"+val1+"/"+val2;
+			
+			console.log(url);
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200)
+				{
+								
+					document.getElementById("final").innerHTML+="<p>Success!</p>";		
+							
+				}
+				};
+				xhttp.open("GET",url,true);
+				xhttp.send();
+});
+
+$(document).on('click','#product',function(){
+     
+			console.log("product clicked");
+			var val=document.getElementById("product1").value;
+			var val1=document.getElementById("product2").value;
+			var val2=document.getElementById("product3").value;
+
+			
+			var val3=document.getElementById("product_name").value;
+			var val4=document.getElementById("product_desc").value;
+			var val5=document.getElementById("product_price").value;
+
+			
+	
+			
+			var url="http://localhost:3000/dataoperators/addproduct/"+val+"/"+val1+"/"+val2+"/"+val3+"/"+val4+"/"+val5;
+			
+			console.log(url);
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200)
+				{
+								
+					document.getElementById("final").innerHTML+="<p>Success!</p>";		
+							
+				}
+				};
+				xhttp.open("GET",url,true);
+				xhttp.send();
+});
+
+</script>
+</html>
