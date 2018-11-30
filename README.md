@@ -240,7 +240,10 @@ There are two software sub-modules involved here namely:<br>
     <li> 3rd Party APIs used : MLAB APIs, Nexmo Messaging APIs, Node Mailer Emailing APIs, Google Maps APIs, Alexa Cards for Alexa App </li>
   </ul>    
 <li><b>	Video Demonstration of alexa Conversation:</b><br> 
-  [![Watch the video](https://github.com/amitabh27/Rakathon/blob/master/repoMetadata/logo.png)](https://www.youtube.com/watch?v=EP5G0mf56pA&t=94s)
+ <video width="320" height="240" controls>
+  <source src="https://www.youtube.com/watch?v=rZEOm7kpvL0" type="video/mp4">
+
+</video>
  
  
 <li><b>	Architecture of Alexa Skill :</b><br>  
