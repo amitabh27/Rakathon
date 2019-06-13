@@ -1,0 +1,760 @@
+
+Questions:
+https://www.geeksforgeeks.org/next-greater-element/
+https://www.geeksforgeeks.org/the-stock-span-problem/
+https://www.geeksforgeeks.org/count-subarrays-second-highest-lie-highest/
+https://www.geeksforgeeks.org/largest-rectangle-under-histogram/
+https://www.geeksforgeeks.org/find-the-maximum-of-minimums-for-every-window-size-in-a-given-array/
+https://www.geeksforgeeks.org/sorting-queue-without-extra-space/
+https://www.geeksforgeeks.org/sum-minimum-maximum-elements-subarrays-size-k/
+https://www.geeksforgeeks.org/interesting-method-generate-binary-numbers-1-n/
+https://www.geeksforgeeks.org/find-a-tour-that-visits-all-stations/
+Using Queue (rot oranges / nearest 1 in binary matrix) and delimiter concept (BFS)
+https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/
+https://www.geeksforgeeks.org/rearrange-given-list-consists-alternating-minimum-maximum-elements/
+https://www.geeksforgeeks.org/length-longest-palindrome-list-linked-list-using-o1-extra-space/
+https://www.geeksforgeeks.org/convert-a-binary-tree-to-a-circular-doubly-link-list/
+https://www.geeksforgeeks.org/convert-given-binary-tree-doubly-linked-list-set-3/
+https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/
+https://www.geeksforgeeks.org/count-maximum-points-on-same-line/
+https://www.geeksforgeeks.org/find-top-k-or-most-frequent-numbers-in-a-stream/
+https://www.geeksforgeeks.org/find-pair-with-greatest-product-in-array/
+https://www.geeksforgeeks.org/print-triplets-sorted-array-form-ap/
+https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/
+
+
+windows:
+https://www.geeksforgeeks.org/sliding-window-maximum-maximum-of-all-subarrays-of-size-k/
+https://www.geeksforgeeks.org/count-distinct-elements-in-every-window-of-size-k/
+https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/
+
+
+subarrays:
+https://www.geeksforgeeks.org/subarraysubstring-vs-subsequence-and-programs-to-generate-them/
+https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/
+https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/
+https://www.geeksforgeeks.org/check-if-an-array-can-be-divided-into-pairs-whose-sum-is-divisible-by-k/
+https://www.geeksforgeeks.org/subarray-no-pair-sum-divisible-k/
+https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/
+https://www.geeksforgeeks.org/subarrays-distinct-elements/
+https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/ (max sum subaaray , sum divisible by k)
+
+
+https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/ [size and printing]
+https://www.geeksforgeeks.org/k-maximum-sums-non-overlapping-contiguous-sub-arrays/
+https://www.geeksforgeeks.org/maximum-product-subarray/
+https://www.geeksforgeeks.org/minimum-product-subset-array/
+https://www.geeksforgeeks.org/maximum-contiguous-circular-sum/
+https://www.geeksforgeeks.org/find-maximum-average-subarray-of-k-length/
+
+subsequences:
+https://www.geeksforgeeks.org/largest-increasing-subsequence-of-consecutive-integers/   (increase and diff between adjacents is 1)
+https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/	(only diff between adjacents is one)
+https://www.geeksforgeeks.org/longest-consecutive-subsequence/	(the entire sequence is consecutive but can be in any order like 1,3,4,2)
+https://www.geeksforgeeks.org/length-largest-subarray-contiguous-elements-set-2/ ( subarray with 13,14,16,15)
+https://www.geeksforgeeks.org/maximum-sum-increasing-subsequence-dp-14/
+
+https://www.geeksforgeeks.org/longest-bitonic-subsequence-dp-15/ [Longest increasing,decreasing and bitonic subsequence]
+https://www.geeksforgeeks.org/construction-of-longest-increasing-subsequence-using-dynamic-programming/ [printing the above subsequences]
+https://www.geeksforgeeks.org/maximum-sum-increasing-subsequence-dp-14/
+https://www.geeksforgeeks.org/find-a-sorted-subsequence-of-size-3-in-linear-time/ [linear time sorted subsequence of size 3]
+https://www.geeksforgeeks.org/minimum-number-of-jumps-to-reach-end-of-a-given-array/
+https://www.geeksforgeeks.org/minimum-jumps-to-reach-last-building-in-a-matrix/
+https://www.geeksforgeeks.org/maximum-sum-such-that-no-two-elements-are-adjacent/
+https://www.geeksforgeeks.org/maximum-sum-2-x-n-grid-no-two-elements-adjacent/
+https://www.geeksforgeeks.org/increasing-subsequence-of-length-three-with-maximum-product/ [left gretest * right greatest * arr[i] ==> Maximise this in O(n) ]
+
+
+
+
+Trees and Heaps:
+https://www.geeksforgeeks.org/insertion-in-a-binary-tree-in-level-order/ (Queue - for level order traversal)
+https://www.geeksforgeeks.org/avl-with-duplicate-keys/
+https://www.geeksforgeeks.org/expression-tree/
+https://www.geeksforgeeks.org/evaluation-of-expression-tree/
+
+https://www.geeksforgeeks.org/symmetric-tree-tree-which-is-mirror-image-of-itself/
+https://www.geeksforgeeks.org/check-if-two-trees-are-mirror/
+
+https://www.geeksforgeeks.org/print-postorder-from-given-inorder-and-preorder-traversals/ 
+https://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/  [build the actual tree]
+https://www.geeksforgeeks.org/construct-tree-inorder-level-order-traversals/
+https://www.geeksforgeeks.org/full-and-complete-binary-tree-from-given-preorder-and-postorder-traversals/
+
+https://www.geeksforgeeks.org/find-postorder-traversal-of-bst-from-preorder-traversal/ 
+https://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversa/
+every node value=sum(inorder pre+inorder succ) ..... 0,inorder traversal of tree,0 then i,i+1
+https://www.geeksforgeeks.org/level-order-traversal-in-spiral-form/     [only level order = single queue,level order in spiral = 2 stacks]
+https://www.geeksforgeeks.org/level-order-traversal-direction-change-every-two-levels/   [level order with direction change after 2 levels= stack and Queue]
+https://www.geeksforgeeks.org/reverse-level-order-traversal/ [reverse level order first use Q then Stack]
+https://www.geeksforgeeks.org/reverse-tree-path/
+https://www.geeksforgeeks.org/perfect-binary-tree-specific-level-order-traversal-set-2/
+https://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion-and-without-stack/    [Morris Traversal]
+https://www.geeksforgeeks.org/diagonal-traversal-of-binary-tree/
+https://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
+
+https://www.geeksforgeeks.org/sum-nodes-longest-path-root-leaf-node/		[longest root-leaf path]
+https://www.geeksforgeeks.org/find-the-maximum-sum-path-in-a-binary-tree/	[biggest sum root-leaf path]
+https://www.geeksforgeeks.org/print-k-sum-paths-binary-tree/
+https://www.geeksforgeeks.org/given-a-binary-tree-print-all-root-to-leaf-paths/
+https://www.geeksforgeeks.org/print-paths-root-specified-sum-binary-tree/
+https://www.geeksforgeeks.org/find-largest-subtree-sum-tree/ [using postorder not children-sum property]
+
+https://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/ [LCA]
+https://www.geeksforgeeks.org/construct-ancestor-matrix-from-a-given-binary-tree/
+
+https://www.geeksforgeeks.org/find-distance-between-two-nodes-of-a-binary-tree/ [min distance between two nodes in terms of length]
+https://www.geeksforgeeks.org/find-maximum-path-sum-two-leaves-binary-tree/ [max distance between any two leaves in terms of sum of nodes on path]
+https://www.geeksforgeeks.org/find-closest-leaf-binary-tree/
+https://www.geeksforgeeks.org/given-a-binary-tree-print-out-all-of-its-root-to-leaf-paths-one-per-line/
+https://www.geeksforgeeks.org/print-path-root-given-node-binary-tree/
+
+https://www.geeksforgeeks.org/diameter-of-a-binary-tree/
+https://www.geeksforgeeks.org/print-longest-leaf-leaf-path-binary-tree/ [nodes in a diameter]
+https://www.geeksforgeeks.org/maximum-width-of-a-binary-tree/
+
+https://www.geeksforgeeks.org/bottom-view-binary-tree/
+https://www.geeksforgeeks.org/print-left-view-binary-tree/   [right view - last node in each level]
+https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/ [ use bottom view logic and when there r 2 nodes with same key, print the one which is higher in tree]
+
+https://www.geeksforgeeks.org/check-if-a-given-binary-tree-is-sumtree/
+https://www.geeksforgeeks.org/check-if-removing-an-edge-can-divide-a-binary-tree-in-two-halves/
+https://www.geeksforgeeks.org/check-given-binary-tree-follows-height-property-red-black-tree/
+
+https://www.geeksforgeeks.org/print-middle-level-perfect-binary-tree-without-finding-height/ [slow and fast pointers in tree]
+
+https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
+https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/
+
+AVL:
+https://www.geeksforgeeks.org/avl-tree-set-1-insertion/
+https://www.geeksforgeeks.org/avl-tree-set-2-deletion/
+
+https://www.geeksforgeeks.org/binary-tree-to-binary-search-tree-conversion/ [inorder of BT then again inorder to copy inorder]
+https://www.geeksforgeeks.org/convert-bst-min-heap/ [inorder of BST then preorder of given BST and copy inorder values]
+https://www.geeksforgeeks.org/sorted-array-to-balanced-bst/
+https://www.geeksforgeeks.org/transform-bst-sum-tree/ [to get descending order --> do reverse of inorder]
+
+https://www.geeksforgeeks.org/construct-bst-given-level-order-traversal/
+https://www.geeksforgeeks.org/check-given-array-can-represent-level-order-traversal-binary-search-tree/
+https://www.geeksforgeeks.org/check-if-a-given-array-can-represent-preorder-traversal-of-binary-search-tree/
+https://www.geeksforgeeks.org/find-k-th-smallest-element-in-bst-order-statistics-in-bst/ [read augmented method]
+Kth Smallest/Largest in BST [Inorder Morris Traversal in O(1) extra space] 
+https://www.geeksforgeeks.org/kth-smallest-element-in-bst-using-o1-extra-space/
+https://www.geeksforgeeks.org/kth-largest-element-bst-using-constant-extra-space/
+https://www.geeksforgeeks.org/print-bst-keys-in-given-range-o1-space/  [Morris Traversal same as that of Kth Smallest]
+https://www.geeksforgeeks.org/rank-element-stream/
+
+https://www.geeksforgeeks.org/binary-heap/
+https://www.geeksforgeeks.org/nearly-sorted-algorithm/
+https://www.geeksforgeeks.org/check-if-a-given-binary-tree-is-heap/ [Heap property plus being complete tree]
+https://www.geeksforgeeks.org/how-to-check-if-a-given-array-represents-a-binary-heap/ [checking for an array if its heap or not]
+https://www.geeksforgeeks.org/merge-k-sorted-arrays/ [Check the heap creation way]
+Median of stream of numbers [Heap - youtube]
+https://www.geeksforgeeks.org/median-two-sorted-arrays-different-sizes-ologminn-m/
+https://www.geeksforgeeks.org/largest-triplet-product-stream/ [Highest product triplet in stream]
+https://www.geeksforgeeks.org/kth-largest-element-in-a-stream/
+https://www.geeksforgeeks.org/find-first-non-repeating-character-stream-characters/
+
+
+
+Arrays:
+https://www.geeksforgeeks.org/array-rotation/ [check O(n) method of jump start] 
+https://www.geeksforgeeks.org/program-for-array-rotation-continued-reversal-algorithm/
+https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
+https://www.geeksforgeeks.org/given-a-sorted-and-rotated-array-find-if-there-is-a-pair-with-a-given-sum/ [2 pointers approach]
+https://www.geeksforgeeks.org/find-maximum-value-of-sum-iarri-with-only-rotations-on-given-array-allowed/
+https://www.geeksforgeeks.org/find-a-rotation-with-maximum-hamming-distance/ [check brute force way of doubling the array]
+https://www.geeksforgeeks.org/queries-left-right-circular-shift-array/
+https://www.geeksforgeeks.org/find-element-given-index-number-rotations/
+https://www.geeksforgeeks.org/find-index-0-replaced-1-get-longest-continuous-sequence-1s-binary-array/
+https://www.geeksforgeeks.org/sort-elements-by-frequency-set-5-using-java-map/
+
+https://www.geeksforgeeks.org/rearrange-positive-and-negative-numbers-publish/ [QUICK SORT PARTITION WITH 0 AS PIVOT]
+https://www.geeksforgeeks.org/move-zeroes-end-array/
+https://www.geeksforgeeks.org/rearrange-array-such-that-even-positioned-are-greater-than-odd/
+https://www.geeksforgeeks.org/rearrange-array-even-index-elements-smaller-odd-index-elements-greater/ [just comparing ones on right and swapping]
+https://www.geeksforgeeks.org/reorder-a-array-according-to-given-indexes/ [check the method without extra space]
+https://www.geeksforgeeks.org/rearrange-array-maximum-minimum-form-set-2-o1-extra-space/ [Sorting-nlogn If sorted then n using extra space. Now do it using O(1) space]
+https://www.geeksforgeeks.org/convert-array-into-zig-zag-fashion/
+
+https://www.geeksforgeeks.org/ropes-left-every-cut/
+https://www.geeksforgeeks.org/searching-array-adjacent-differ-k/
+https://www.geeksforgeeks.org/find-repetitive-element-1-n-1/ [Sum technique and XOR Technique]
+https://www.geeksforgeeks.org/find-the-two-repeating-elements-in-a-given-array/ [Making array element negative technique for duplicates]
+https://www.geeksforgeeks.org/find-the-maximum-repeating-number-in-ok-time/ [element modification technique for max repetition identification]
+https://www.geeksforgeeks.org/maximum-equlibrium-sum-array/
+https://www.geeksforgeeks.org/majority-element/ [Majority element = >N/2]
+https://www.geeksforgeeks.org/n3-repeated-number-array-o1-space/  [Majority Element = >N/3]
+https://www.geeksforgeeks.org/check-for-majority-element-in-a-sorted-array/ [Majority element = Binary search to return first occurence of ele in array]
+https://www.geeksforgeeks.org/minimize-the-maximum-difference-between-the-heights/
+https://www.geeksforgeeks.org/counting-inversions/ 
+https://www.geeksforgeeks.org/minimum-number-swaps-required-sort-array/
+
+https://www.geeksforgeeks.org/k-maximum-sum-combinations-two-arrays/
+https://www.geeksforgeeks.org/given-two-sorted-arrays-number-x-find-pair-whose-sum-closest-x/
+https://www.geeksforgeeks.org/k-th-smallest-absolute-difference-two-elements-array/
+https://www.geeksforgeeks.org/maximum-sum-path-across-two-arrays/
+
+https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/
+https://www.geeksforgeeks.org/given-an-array-arr-find-the-maximum-j-i-such-that-arrj-arri/
+https://www.geeksforgeeks.org/delete-array-elements-which-are-smaller-than-next-or-become-smaller/
+https://www.geeksforgeeks.org/merging-intervals/
+
+
+Range queries:
+
+
+
+Sqrt decomposition[Lookups plus updates]
+https://www.geeksforgeeks.org/sqrt-square-root-decomposition-technique-set-1-introduction/
+https://www.geeksforgeeks.org/range-queries-for-frequencies-of-array-elements/
+https://www.geeksforgeeks.org/queries-counts-array-elements-values-given-range/ [Binary search for index of element not in array ]
+https://www.geeksforgeeks.org/array-range-queries-for-searching-an-element/
+https://www.geeksforgeeks.org/difference-array-range-update-query-o1/
+https://www.geeksforgeeks.org/mean-range-array/
+https://www.geeksforgeeks.org/products-ranges-array/
+https://www.geeksforgeeks.org/count-primes-ranges/
+
+
+BIT:
+https://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/
+https://www.geeksforgeeks.org/number-elements-less-equal-given-number-given-subarray/
+https://www.geeksforgeeks.org/queries-number-distinct-elements-subarray/
+
+Segment Trees:
+https://www.geeksforgeeks.org/lazy-propagation-in-segment-tree/
+https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/
+https://www.geeksforgeeks.org/constant-time-range-add-operation-array/
+https://www.geeksforgeeks.org/range-lcm-queries/
+https://www.geeksforgeeks.org/gcds-of-a-given-index-ranges-in-an-array/
+https://www.geeksforgeeks.org/count-elements-which-divide-all-numbers-in-range-l-r/
+https://www.geeksforgeeks.org/maximum-occurrence-given-range/
+https://www.geeksforgeeks.org/min-max-range-queries-array/
+
+Trie:
+https://www.geeksforgeeks.org/trie-insert-and-search/
+https://www.geeksforgeeks.org/find-the-maximum-subarray-xor-in-a-given-array/
+https://www.geeksforgeeks.org/word-break-problem-trie-solution/
+
+Suffix Array and Tree:
+https://www.geeksforgeeks.org/suffix-array-set-1-introduction/
+https://www.geeksforgeeks.org/pattern-searching-using-suffix-tree/
+
+Disjoint Set:
+https://www.geeksforgeeks.org/union-find/
+
+
+
+
+Matrix:
+https://www.geeksforgeeks.org/inplace-rotate-square-matrix-by-90-degrees/
+https://www.geeksforgeeks.org/rotate-matrix-180-degree/ [print from n,n to 0,0 row wise right to left]
+https://www.geeksforgeeks.org/count-smaller-equal-elements-sorted-array/ [Binary search ariation= to get number of ele  <= given x]
+https://www.geeksforgeeks.org/find-median-row-wise-sorted-matrix/
+https://www.geeksforgeeks.org/print-a-given-matrix-in-spiral-form/
+
+https://www.geeksforgeeks.org/maximum-path-sum-matrix/   [Max Sum path from top to bottom in matrix]
+https://www.geeksforgeeks.org/shortest-distance-two-cells-matrix-grid/ [BFS for unweighted graph gives shortest distance]
+https://www.geeksforgeeks.org/print-palindromic-paths-top-left-bottom-right-matrix/
+https://www.geeksforgeeks.org/minimum-operations-required-set-elements-binary-matrix/
+https://www.geeksforgeeks.org/collect-maximum-coins-before-hitting-a-dead-end/ [3D DP]
+https://www.geeksforgeeks.org/number-of-paths-with-exactly-k-coins/				[3D DP]
+https://www.geeksforgeeks.org/find-the-longest-path-in-a-matrix-with-given-constraints/
+https://www.geeksforgeeks.org/min-cost-path-dp-6/ [Min Cost path from 0,0 to m,n]
+https://www.geeksforgeeks.org/minimum-positive-points-to-reach-destination/
+
+Idempotent = A*A= A  and Involuntary= A*A=I
+https://www.geeksforgeeks.org/print-matrix-zag-zag-fashion/ [Diagonal wise alternate direction printing]
+https://www.geeksforgeeks.org/find-number-of-islands/
+https://www.geeksforgeeks.org/magic-square/
+https://www.geeksforgeeks.org/find-rectangle-binary-matrix-corners-1/
+https://www.geeksforgeeks.org/search-in-row-wise-and-column-wise-sorted-matrix/
+https://www.geeksforgeeks.org/print-cells-rectangular-sum-matrix/
+https://www.geeksforgeeks.org/find-pairs-given-sum-elements-pair-different-rows/
+https://www.geeksforgeeks.org/maximum-xor-value-matrix/
+https://www.geeksforgeeks.org/validity-of-a-given-tic-tac-toe-board-configuration/
+
+
+https://www.geeksforgeeks.org/count-sub-matrices-sum-divisible-k/
+https://www.geeksforgeeks.org/maximum-sum-rectangle-in-a-2d-matrix-dp-27/ [same technique as above]
+https://www.geeksforgeeks.org/maximum-size-sub-matrix-with-all-1s-in-a-binary-matrix/
+
+
+
+Strings:
+
+https://www.geeksforgeeks.org/pangram-checking/
+https://www.geeksforgeeks.org/rearrange-characters-string-no-two-adjacent/
+https://www.geeksforgeeks.org/compare-two-strings-lexicographically-in-java/ [compareTo in java]
+https://www.geeksforgeeks.org/smallest-number-sum-digits-n-divisible-10n/
+https://www.geeksforgeeks.org/check-given-string-sum-string/
+https://www.geeksforgeeks.org/calculate-maximum-value-using-sign-two-numbers-string/
+https://www.geeksforgeeks.org/ways-remove-one-element-binary-string-xor-becomes-zero/
+https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/
+https://www.geeksforgeeks.org/count-number-of-substrings-with-exactly-k-distinct-characters/
+https://www.geeksforgeeks.org/number-substrings-count-character-k/
+https://www.geeksforgeeks.org/count-substrings-character-occurring-k-times/
+https://www.geeksforgeeks.org/count-substrings-with-same-first-and-last-characters/ [Method 3]
+https://www.geeksforgeeks.org/print-words-together-set-characters/
+https://www.geeksforgeeks.org/number-distinct-permutation-string-can/ [superb combinatorics]
+https://www.geeksforgeeks.org/time-complexity-permutations-string/ [printing all permutations]
+https://www.geeksforgeeks.org/substring-equal-number-0-1-2/
+https://www.geeksforgeeks.org/transform-one-string-to-another-using-minimum-number-of-given-operation/
+https://www.geeksforgeeks.org/converting-decimal-number-lying-between-1-to-3999-to-roman-numerals/
+https://www.geeksforgeeks.org/converting-roman-numerals-decimal-lying-1-3999/
+https://www.geeksforgeeks.org/converting-one-string-using-append-delete-last-operations/
+https://www.geeksforgeeks.org/perfect-reversible-string/
+https://www.geeksforgeeks.org/minimum-rotations-required-get-string/
+https://www.geeksforgeeks.org/given-sorted-dictionary-find-precedence-characters/ [alien Dictionary]
+https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/
+
+
+https://www.geeksforgeeks.org/count-strings-adjacent-characters-difference-one/
+https://www.geeksforgeeks.org/find-number-times-string-occurs-given-string/
+	https://www.geeksforgeeks.org/printing-longest-common-subsequence/ [LCS,printing,printing all of them]
+	https://www.geeksforgeeks.org/printing-longest-common-subsequence-set-2-printing/
+	https://www.geeksforgeeks.org/lcs-longest-common-subsequence-three-strings/
+	https://www.geeksforgeeks.org/longest-repeating-subsequence/
+	https://www.geeksforgeeks.org/print-longest-palindromic-subsequence/  [variation=https://www.geeksforgeeks.org/minimum-number-deletions-make-string-palindrome/]
+	https://www.geeksforgeeks.org/count-palindromic-subsequence-given-string/
+	https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-dp-28/
+	https://www.geeksforgeeks.org/maximum-length-prefix-one-string-occurs-subsequence-another/
+	https://www.geeksforgeeks.org/shortest-uncommon-subsequence/
+	
+	https://www.geeksforgeeks.org/shortest-common-supersequence/
+	https://www.geeksforgeeks.org/shortest-possible-combination-two-strings/
+
+	https://www.geeksforgeeks.org/longest-common-substring-dp-29/
+	https://www.geeksforgeeks.org/longest-repeating-and-non-overlapping-substring/
+	https://www.geeksforgeeks.org/longest-palindromic-substring-set-2/
+	https://www.geeksforgeeks.org/longest-common-substring-array-strings/
+	https://www.geeksforgeeks.org/longest-common-prefix-using-sorting/
+	https://www.geeksforgeeks.org/frequency-substring-string/
+	https://www.geeksforgeeks.org/shortest-superstring-problem/ [dont see the code,just have a look at the logic]
+	
+	https://www.geeksforgeeks.org/word-wrap-problem-space-optimized-solution/
+	https://www.geeksforgeeks.org/form-minimum-number-from-given-sequence/
+	https://www.geeksforgeeks.org/anagram-substring-search-search-permutations/
+	https://www.geeksforgeeks.org/find-palindromic-sub-strings-given-string-set-2/
+	https://www.geeksforgeeks.org/online-algorithm-for-checking-palindrome-in-a-stream/
+	https://www.geeksforgeeks.org/palindrome-partitioning-dp-17/
+	https://www.geeksforgeeks.org/check-for-palindrome-after-every-character-replacement-query/
+	https://www.geeksforgeeks.org/lexicographically-next-greater-string-using-same-character-set/
+	https://www.geeksforgeeks.org/partition-number-two-divisble-parts/
+	
+
+https://www.geeksforgeeks.org/longest-subsequence-where-every-character-appears-at-least-k-times/
+https://www.geeksforgeeks.org/number-subsequences-form-ai-bj-ck/
+https://www.geeksforgeeks.org/longest-common-subsequence-with-permutations-allowed/
+https://www.geeksforgeeks.org/subsequences-string-start-vowel-end-consonant/
+https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/
+https://www.geeksforgeeks.org/boyer-moore-algorithm-for-pattern-searching/
+https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/
+https://www.geeksforgeeks.org/wildcard-pattern-matching/
+
+
+Geometrical and Mathematical:
+
+https://www.geeksforgeeks.org/check-if-two-given-line-segments-intersect/
+https://www.geeksforgeeks.org/minimum-lines-cover-points/
+https://www.geeksforgeeks.org/find-integer-point-line-segment-given-two-ends/
+https://www.geeksforgeeks.org/count-different-straight-lines-total-n-points-m-collinear/ [Formula]
+https://www.geeksforgeeks.org/direction-point-line-segment/
+https://www.geeksforgeeks.org/c-program-find-area-triangle/
+https://www.geeksforgeeks.org/count-integral-points-inside-a-triangle/ [picks theorem = Important]
+https://www.geeksforgeeks.org/maximum-number-2x2-squares-can-fit-inside-right-isosceles-triangle/ [while loop answer : -2 because square is of size 2]
+https://www.geeksforgeeks.org/find-two-rectangles-overlap/
+https://www.geeksforgeeks.org/check-four-segments-form-rectangle/
+Area of Rect described by 4 coordinates= A( ABC - Triangle) + A( ADC - Triangle)
+
+https://www.geeksforgeeks.org/number-unique-rectangles-formed-using-n-unit-squares/
+https://www.geeksforgeeks.org/number-rectangles-nm-grid/
+https://www.geeksforgeeks.org/paper-cut-minimum-number-squares/
+
+https://www.geeksforgeeks.org/number-of-parallelograms-when-n-horizontal-parallel-lines-intersect-m-vertical-parallellines/
+https://www.geeksforgeeks.org/check-whether-four-points-make-parallelogram/
+
+https://www.geeksforgeeks.org/how-to-check-if-a-given-point-lies-inside-a-polygon/
+https://www.geeksforgeeks.org/queries-count-point-lie-inside-circle/
+https://www.geeksforgeeks.org/check-whether-point-exists-circle-sector-not/
+https://www.geeksforgeeks.org/check-whether-a-given-point-lies-inside-a-triangle-or-not/
+
+https://www.geeksforgeeks.org/find-number-diagonals-n-sided-convex-polygon/
+https://www.geeksforgeeks.org/convex-hull-set-1-jarviss-algorithm-or-wrapping/ [Convex hull]
+https://www.geeksforgeeks.org/number-integral-points-two-points/
+
+https://www.geeksforgeeks.org/program-to-find-lcm-of-two-numbers/
+https://www.geeksforgeeks.org/lcm-of-given-array-elements/
+https://www.geeksforgeeks.org/euclidean-algorithms-basic-and-extended/
+https://www.geeksforgeeks.org/first-n-natural-can-be-divided-into-two-sets-with-given-difference-and-co-prime-sums/
+https://www.geeksforgeeks.org/program-find-gcd-floating-point-numbers/
+https://www.geeksforgeeks.org/largest-subsequence-gcd-greater-1/
+https://www.geeksforgeeks.org/largest-subarray-gcd-one/
+
+https://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/
+https://www.geeksforgeeks.org/segmented-sieve/
+https://www.geeksforgeeks.org/find-sum-even-factors-number/
+https://www.geeksforgeeks.org/find-divisors-natural-number-set-1/
+
+https://www.geeksforgeeks.org/check-large-number-divisible-3-not/
+https://www.geeksforgeeks.org/check-large-number-divisible-9-not/
+
+https://www.geeksforgeeks.org/check-large-number-divisible-4-not/
+https://www.geeksforgeeks.org/check-large-number-divisible-6-not/
+
+https://www.geeksforgeeks.org/check-whether-large-number-divisible-7/
+https://www.geeksforgeeks.org/check-large-number-divisible-13-not/
+
+https://www.geeksforgeeks.org/check-large-number-divisible-11-not/
+
+
+https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/ (Check O(1) method]
+https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/
+https://www.geeksforgeeks.org/program-nth-catalan-number/
+
+https://www.geeksforgeeks.org/compute-ncr-p-set-1-introduction-and-dynamic-programming-solution/
+https://www.geeksforgeeks.org/sum-binomial-coefficients/ [check optimal method]
+https://www.geeksforgeeks.org/maximum-points-intersection-n-circles/
+https://www.geeksforgeeks.org/count-trailing-zeroes-factorial-number/
+https://www.geeksforgeeks.org/factorial-large-number/
+https://www.geeksforgeeks.org/find-first-natural-number-whose-factorial-divisible-x/
+https://www.geeksforgeeks.org/smallest-number-least-n-digits-factorial/
+https://www.geeksforgeeks.org/last-non-zero-digit-factorial/
+https://www.geeksforgeeks.org/smallest-number-least-n-trailing-zeroes-factorial/
+https://www.geeksforgeeks.org/bell-numbers-number-of-ways-to-partition-a-set/
+https://www.geeksforgeeks.org/find-next-greater-number-set-digits/
+
+
+Bitwise:
+
+https://www.geeksforgeeks.org/turn-off-the-rightmost-set-bit/
+https://www.geeksforgeeks.org/find-whether-a-given-number-is-a-power-of-4-or-not/ [check bitwise method]
+https://www.geeksforgeeks.org/count-set-bits-in-an-integer/
+https://www.geeksforgeeks.org/count-number-of-bits-to-be-flipped-to-convert-a-to-b/
+https://www.geeksforgeeks.org/find-position-of-the-only-set-bit/
+https://www.geeksforgeeks.org/swap-two-nibbles-byte/
+https://www.geeksforgeeks.org/how-to-turn-off-a-particular-bit-in-a-number/
+https://www.geeksforgeeks.org/find-xor-of-two-number-without-using-xor-operator/
+https://www.geeksforgeeks.org/write-an-efficient-c-program-to-reverse-bits-of-a-number/
+https://www.geeksforgeeks.org/smallest-power-of-2-greater-than-or-equal-to-n/ [check the rightmost set bit method]
+https://www.geeksforgeeks.org/swap-all-odd-and-even-bits/
+https://www.geeksforgeeks.org/count-total-set-bits-in-all-numbers-from-1-to-n/
+https://www.geeksforgeeks.org/closest-next-smaller-greater-numbers-number-set-bits/
+
+Search:
+Binary Search
+https://www.geeksforgeeks.org/jump-search/
+https://www.geeksforgeeks.org/search-almost-sorted-array/
+https://www.geeksforgeeks.org/count-1s-sorted-binary-array/
+https://www.geeksforgeeks.org/find-three-closest-elements-from-given-three-sorted-arrays/
+https://www.geeksforgeeks.org/minimum-time-required-produce-m-items/
+https://www.geeksforgeeks.org/make-array-elements-equal-minimum-cost/
+
+Divide and Conquer, Backtracking, Branch and Bound :
+
+https://www.geeksforgeeks.org/find-the-point-where-maximum-intervals-overlap/
+https://www.geeksforgeeks.org/find-maximum-height-pyramid-from-the-given-array-of-objects/
+
+https://www.geeksforgeeks.org/8-puzzle-problem-using-branch-and-bound/
+https://www.geeksforgeeks.org/job-assignment-problem-using-branch-and-bound/
+
+https://www.geeksforgeeks.org/the-knights-tour-problem-backtracking-1/
+https://www.geeksforgeeks.org/rat-in-a-maze-backtracking-2/
+https://www.geeksforgeeks.org/n-queen-problem-backtracking-3/
+https://www.geeksforgeeks.org/m-coloring-problem-backtracking-5/
+https://www.geeksforgeeks.org/hamiltonian-cycle-backtracking-6/
+https://www.geeksforgeeks.org/sudoku-backtracking-7/
+https://www.geeksforgeeks.org/print-all-possible-paths-from-top-left-to-bottom-right-of-a-mxn-matrix/
+https://www.geeksforgeeks.org/unique-paths-in-a-grid-with-obstacles/
+https://www.geeksforgeeks.org/write-a-c-program-to-calculate-powxn/ [log n method]
+https://www.geeksforgeeks.org/find-peak-element-2d-array/
+https://www.geeksforgeeks.org/tug-of-war/
+
+Greedy:
+https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/ [ if not sorted first sort as per finish time]
+https://www.geeksforgeeks.org/maximum-trains-stoppage-can-provided/
+
+https://www.geeksforgeeks.org/job-sequencing-problem/
+https://www.geeksforgeeks.org/huffman-coding-greedy-algo-3/
+https://www.geeksforgeeks.org/water-connection-problem/
+https://www.geeksforgeeks.org/policemen-catch-thieves/
+https://www.geeksforgeeks.org/fitting-shelves-problem/
+https://www.geeksforgeeks.org/assign-mice-holes/
+https://www.geeksforgeeks.org/minimum-cost-connect-cities/ [Minimum spanning tree of given graph]
+https://www.geeksforgeeks.org/maximize-array-sun-after-k-negation-operations/
+https://www.geeksforgeeks.org/maximum-sum-absolute-difference-array/
+https://www.geeksforgeeks.org/schedule-jobs-server-gets-equal-load/
+
+first fit and best ft can be implemented using self balancing binary trees in O(N*Log N)
+
+https://www.geeksforgeeks.org/bin-packing-problem-minimize-number-of-used-bins/
+https://www.geeksforgeeks.org/fractional-knapsack-problem/
+https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/
+
+https://www.geeksforgeeks.org/find-minimum-maximum-amount-buy-n-candies/
+https://www.geeksforgeeks.org/minimum-number-platforms-required-railwaybus-station/
+https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/
+https://www.geeksforgeeks.org/minimize-cash-flow-among-given-set-friends-borrowed-money/
+https://www.geeksforgeeks.org/minimum-cost-cut-board-squares/
+https://www.geeksforgeeks.org/find-minimum-time-to-finish-all-jobs-with-given-constraints/
+https://www.geeksforgeeks.org/minimum-increment-k-operations-make-elements-equal/
+https://www.geeksforgeeks.org/rearrange-a-string-so-that-all-same-characters-become-at-least-d-distance-away/
+
+
+
+DYANMIC Programming:
+
+https://www.geeksforgeeks.org/ugly-numbers/
+https://www.geeksforgeeks.org/program-nth-catalan-number/
+https://www.geeksforgeeks.org/binomial-coefficient-dp-9/
+
+https://www.geeksforgeeks.org/tiling-problem/
+https://www.geeksforgeeks.org/tiling-with-dominoes/
+https://www.geeksforgeeks.org/count-number-ways-tile-floor-size-n-x-m-using-1-x-m-size-tiles/
+
+https://www.geeksforgeeks.org/painting-fence-algorithm/
+https://www.geeksforgeeks.org/gold-mine-problem/ [Important]
+https://www.geeksforgeeks.org/friends-pairing-problem/
+https://www.geeksforgeeks.org/cutting-a-rod-dp-13/
+https://www.geeksforgeeks.org/assembly-line-scheduling-dp-34/
+https://www.geeksforgeeks.org/find-maximum-length-snake-sequence/
+https://www.geeksforgeeks.org/count-even-length-binary-sequences-with-same-sum-of-first-and-second-half-bits/ [check ncr method]
+https://www.geeksforgeeks.org/maximum-games-played-winner/
+https://www.geeksforgeeks.org/maximum-sum-pairs-specific-difference/
+https://www.geeksforgeeks.org/maximum-path-sum-position-jumps-divisibility-condition/
+https://www.geeksforgeeks.org/maximize-sum-selected-numbers-performing-following-operation/ [Check Greedy approach in comments]
+https://www.geeksforgeeks.org/count-ways-build-street-given-constraints/
+https://www.geeksforgeeks.org/counts-paths-point-reach-origin/
+https://www.geeksforgeeks.org/box-stacking-problem-dp-22/
+https://www.geeksforgeeks.org/tile-stacking-problem/
+https://www.geeksforgeeks.org/matrix-chain-multiplication-dp-8/
+https://www.geeksforgeeks.org/number-of-palindromic-paths-in-a-matrix/
+https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-k-times/
+https://www.geeksforgeeks.org/maximum-points-top-left-matrix-bottom-right-return-back/
+https://www.geeksforgeeks.org/longest-arithmetic-progression-dp-35/
+https://www.geeksforgeeks.org/longest-geometric-progression/
+
+https://www.geeksforgeeks.org/dynamic-programming-trees-set-1/
+https://www.geeksforgeeks.org/dynamic-programming-trees-set-2/
+
+https://www.geeksforgeeks.org/check-people-can-vote-two-machines/
+https://www.geeksforgeeks.org/probability-knight-remain-chessboard/
+https://www.geeksforgeeks.org/egg-dropping-puzzle-dp-11/
+https://www.geeksforgeeks.org/dice-throw-dp-30/
+
+https://www.geeksforgeeks.org/highway-billboard-problem/
+https://www.geeksforgeeks.org/partition-problem-dp-18/ [issubsetSum variation]
+https://www.geeksforgeeks.org/weighted-job-scheduling/ [Another way=https://www.geeksforgeeks.org/weighted-job-scheduling-set-2-using-lis/]
+https://www.geeksforgeeks.org/count-number-ways-jump-reach-end/
+https://www.geeksforgeeks.org/find-the-minimum-cost-to-reach-a-destination-where-every-station-is-connected-in-one-direction/
+
+
+[knapsack]
+https://www.geeksforgeeks.org/minimum-cost-to-fill-given-weight-in-a-bag/
+https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/
+https://www.geeksforgeeks.org/printing-items-01-knapsack/
+https://www.geeksforgeeks.org/unbounded-knapsack-repetition-items-allowed/
+
+
+[coins]
+https://www.geeksforgeeks.org/coin-change-dp-7/ 
+https://www.geeksforgeeks.org/find-minimum-number-of-coins-that-make-a-change/
+https://www.geeksforgeeks.org/count-number-ways-reach-given-score-game/
+https://www.geeksforgeeks.org/count-ways-reach-nth-stair-using-step-1-2-3/
+https://www.geeksforgeeks.org/count-ofdifferent-ways-express-n-sum-1-3-4/
+
+[strings]
+https://www.geeksforgeeks.org/maximum-difference-zeros-ones-binary-string-set-2-time/
+https://www.geeksforgeeks.org/edit-distance-dp-5/
+https://www.geeksforgeeks.org/minimum-time-write-characters-using-insert-delete-copy-operation/
+https://www.geeksforgeeks.org/longest-palindrome-substring-set-1/
+https://www.geeksforgeeks.org/count-palindrome-sub-strings-string/
+https://www.geeksforgeeks.org/number-of-palindromic-subsequences-of-length-k-where-k/
+https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/
+
+[subarray]
+https://www.geeksforgeeks.org/smallest-sum-contiguous-subarray/ [ multiply all by -1 and use kadane]
+https://www.geeksforgeeks.org/longest-alternating-positive-negative-subarray-starting-every-index/
+
+
+[subsequence]
+https://www.geeksforgeeks.org/subset-sum-problem-dp-25/
+https://www.geeksforgeeks.org/perfect-sum-problem-print-subsets-given-sum/
+https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/
+https://www.geeksforgeeks.org/longest-repeated-subsequence/
+https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/
+https://www.geeksforgeeks.org/maximum-length-chain-of-pairs-dp-20/
+https://www.geeksforgeeks.org/maximum-sum-bi-tonic-sub-sequence/
+https://www.geeksforgeeks.org/maximum-sum-increasing-subsequence-dp-14/
+https://www.geeksforgeeks.org/maximum-product-increasing-subsequence/
+https://www.geeksforgeeks.org/count-subsequences-product-less-k/
+https://www.geeksforgeeks.org/maximum-subsequence-sum-such-that-no-three-are-consecutive/
+https://www.geeksforgeeks.org/longest-subsequence-such-that-difference-between-adjacents-is-one/ [instead of dp use hashmap in O(n)]
+https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1/ [same as above Q]
+https://www.geeksforgeeks.org/different-ways-sum-n-using-numbers-greater-equal-m/
+https://www.geeksforgeeks.org/number-subsequences-form-ai-bj-ck/
+https://www.geeksforgeeks.org/print-shortest-common-supersequence/
+https://www.geeksforgeeks.org/temple-offerings/
+https://www.geeksforgeeks.org/count-palindromic-subsequence-given-string/
+https://www.geeksforgeeks.org/maximum-sum-alternating-subsequence-sum/
+https://www.geeksforgeeks.org/largest-sum-zig-zag-sequence-in-a-matrix/
+https://www.geeksforgeeks.org/longest-alternating-subsequence/
+https://www.geeksforgeeks.org/count-distinct-occurrences-as-a-subsequence/
+https://www.geeksforgeeks.org/longest-common-increasing-subsequence-lcs-lis/
+https://www.geeksforgeeks.org/longest-increasing-odd-even-subsequence/
+https://www.geeksforgeeks.org/count-number-increasing-subsequences-size-k/
+https://www.geeksforgeeks.org/maximum-size-subset-given-sum/
+https://www.geeksforgeeks.org/find-maximum-sum-array-length-less-equal-m/
+https://www.geeksforgeeks.org/minimum-steps-to-delete-a-string-after-repeated-deletion-of-palindrome-substrings/
+https://www.geeksforgeeks.org/minimum-cost-make-two-strings-identical-deleting-digits/
+https://www.geeksforgeeks.org/minimum-number-deletions-insertions-transform-one-string-another/
+https://www.geeksforgeeks.org/find-if-string-is-k-palindrome-or-not-set-2/
+
+
+[matrix]
+https://www.geeksforgeeks.org/path-maximum-average-value/
+https://www.geeksforgeeks.org/maximum-path-sum-triangle/
+https://www.geeksforgeeks.org/maximum-points-top-left-matrix-bottom-right-return-back/
+https://www.geeksforgeeks.org/mobile-numeric-keypad-problem/
+https://www.geeksforgeeks.org/painters-partition-problem/
+https://www.geeksforgeeks.org/number-of-paths-with-exactly-k-coins/
+https://www.geeksforgeeks.org/count-number-ways-reach-destination-maze/
+https://www.geeksforgeeks.org/minimum-sum-path-3-d-array/
+https://www.geeksforgeeks.org/find-the-longest-path-in-a-matrix-with-given-constraints/
+https://www.geeksforgeeks.org/longest-increasing-path-matrix/
+https://www.geeksforgeeks.org/modify-array-to-maximize-sum-of-adjacent-differences/
+https://www.geeksforgeeks.org/count-possible-ways-to-construct-buildings/
+
+https://www.geeksforgeeks.org/count-derangements-permutation-such-that-no-element-appears-in-its-original-position/
+https://www.geeksforgeeks.org/count-number-binary-strings-without-consecutive-1s/
+https://www.geeksforgeeks.org/count-number-of-subsets-having-a-particular-xor-value/
+https://www.geeksforgeeks.org/maximum-product-cutting-dp-36/
+https://www.geeksforgeeks.org/maximum-profit-sale-wines/
+
+
+Graph:
+
+https://www.geeksforgeeks.org/graph-and-its-representations/
+
+BFS:
+https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
+https://www.geeksforgeeks.org/level-node-tree-source-node-using-bfs/
+https://www.geeksforgeeks.org/bfs-disconnected-graph/
+https://www.geeksforgeeks.org/find-minimum-numbers-moves-needed-move-one-cell-matrix-another/
+https://www.geeksforgeeks.org/minimum-steps-reach-target-knight/
+https://www.geeksforgeeks.org/minimum-steps-reach-end-array-constraints/
+https://www.geeksforgeeks.org/shortest-path-reach-one-prime-changing-single-digit-time/
+https://www.geeksforgeeks.org/water-jug-problem-using-bfs/
+https://www.geeksforgeeks.org/count-nodes-within-k-distance-from-all-nodes-in-a-set/
+https://www.geeksforgeeks.org/find-shortest-distance-guard-bank/
+https://www.geeksforgeeks.org/find-if-there-is-a-path-between-two-vertices-in-a-given-graph/
+https://www.geeksforgeeks.org/check-given-graph-tree/
+https://www.geeksforgeeks.org/find-same-contacts-in-a-list-of-contacts/
+
+
+DFS:
+https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/
+https://www.geeksforgeeks.org/iterative-depth-first-traversal/
+https://www.geeksforgeeks.org/find-a-mother-vertex-in-a-graph/
+https://www.geeksforgeeks.org/determine-whether-universal-sink-exists-directed-graph/
+https://www.geeksforgeeks.org/number-sink-nodes-graph/
+transitive closure:
+https://www.geeksforgeeks.org/transitive-closure-of-a-graph-using-dfs/ [V^2 method]
+using floyd warshall method it would be V^3.
+https://www.geeksforgeeks.org/find-k-cores-graph/
+https://www.geeksforgeeks.org/count-possible-paths-two-vertices/
+https://www.geeksforgeeks.org/count-number-trees-forest/
+
+https://www.geeksforgeeks.org/find-paths-given-source-destination/ [count paths]
+https://www.geeksforgeeks.org/minimum-number-of-edges-between-two-vertices-of-a-graph/ [shortest path using BFS]
+printing path for above Q=https://www.geeksforgeeks.org/shortest-path-unweighted-graph/
+https://www.geeksforgeeks.org/longest-path-between-any-pair-of-vertices/   [longest path = https://www.geeksforgeeks.org/find-longest-path-directed-acyclic-graph/]
+https://www.geeksforgeeks.org/shortest-path-weighted-graph-weight-edge-1-2/ [BFS for shortest path]
+https://www.geeksforgeeks.org/multistage-graph-shortest-path/ [DP for multistage graph for shortest path]
+
+shortest paths for given source in DAG = https://www.geeksforgeeks.org/shortest-path-for-directed-acyclic-graphs/
+https://www.geeksforgeeks.org/shortest-path-exactly-k-edges-directed-weighted-graph/
+
+https://www.geeksforgeeks.org/sum-of-the-minimum-elements-in-all-connected-components-of-an-undirected-graph/
+https://www.geeksforgeeks.org/iterative-deepening-searchids-iterative-deepening-depth-first-searchiddfs/
+
+
+Cycle:
+https://www.geeksforgeeks.org/detect-cycle-in-a-graph/ [directed]
+https://www.geeksforgeeks.org/detect-cycle-undirected-graph/ [undirected]
+https://www.geeksforgeeks.org/detect-negative-cycle-graph-bellman-ford/
+https://www.geeksforgeeks.org/detecting-negative-cycle-using-floyd-warshall/ [works for disconnected graph as well unlike bellman ford]
+https://www.geeksforgeeks.org/cycles-of-length-n-in-an-undirected-and-connected-graph/
+https://www.geeksforgeeks.org/bipartite-graph/
+https://www.geeksforgeeks.org/check-if-there-is-a-cycle-with-odd-weight-sum-in-an-undirected-graph/ [bipartite]
+https://www.geeksforgeeks.org/check-graphs-cycle-odd-length/ [bipartite]
+https://www.geeksforgeeks.org/find-minimum-weight-cycle-undirected-graph/
+https://www.geeksforgeeks.org/number-ways-node-make-loop-size-k-undirected-complete-connected-graph-n-nodes/
+
+
+topological sorting:
+https://www.geeksforgeeks.org/topological-sorting/ [another method = https://www.geeksforgeeks.org/topological-sorting-using-departure-time-of-vertex/ ]
+https://www.geeksforgeeks.org/assign-directions-to-edges-so-that-the-directed-graph-remains-acyclic/
+https://www.geeksforgeeks.org/maximum-edges-can-added-dag-remains-dag/
+https://www.geeksforgeeks.org/all-topological-sorts-of-a-directed-acyclic-graph/
+
+Spanning Tree:
+https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/
+Prim implementation = https://www.geeksforgeeks.org/prims-mst-for-adjacency-list-representation-greedy-algo-6/
+https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/
+https://www.geeksforgeeks.org/total-number-spanning-trees-graph/
+https://www.geeksforgeeks.org/minimum-product-spanning-tree/
+
+Strongly connected components:
+DFS V times ==> V(V+E)
+Kosaraju with DFS ==> 2*(V+E) https://www.geeksforgeeks.org/connectivity-in-a-directed-graph/
+https://www.geeksforgeeks.org/strongly-connected-components/
+https://www.geeksforgeeks.org/check-given-directed-graph-strongly-connected-set-2-kosaraju-using-bfs/
+https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/
+https://www.geeksforgeeks.org/biconnectivity-in-a-graph/
+https://www.geeksforgeeks.org/biconnected-components/
+https://www.geeksforgeeks.org/bridge-in-a-graph/
+
+
+Flow problems:
+https://www.geeksforgeeks.org/find-edge-disjoint-paths-two-vertices/
+https://www.geeksforgeeks.org/find-edge-disjoint-paths-two-vertices/
+https://www.geeksforgeeks.org/minimum-cut-in-a-directed-graph/
+https://www.geeksforgeeks.org/maximum-bipartite-matching/
+https://www.geeksforgeeks.org/channel-assignment-problem/
+https://www.geeksforgeeks.org/graph-coloring-set-2-greedy-algorithm/
+
+
+https://www.geeksforgeeks.org/find-if-there-is-a-path-of-more-than-k-length-from-a-source/
+https://www.geeksforgeeks.org/transpose-graph/
+https://www.geeksforgeeks.org/transitive-closure-of-a-graph/
+https://www.geeksforgeeks.org/path-rectangle-containing-circles/
+https://www.geeksforgeeks.org/maximum-number-edges-added-tree-stays-bipartite-graph/
+https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/
+https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/
+https://www.geeksforgeeks.org/vertex-cover-problem-set-2-dynamic-programming-solution-tree/
+https://www.geeksforgeeks.org/largest-independent-set-problem-dp-26/
+https://www.geeksforgeeks.org/travelling-salesman-problem-set-2-approximate-using-mst/
+https://www.geeksforgeeks.org/count-possible-paths-source-destination-exactly-k-edges/
+https://www.geeksforgeeks.org/shortest-path-exactly-k-edges-directed-weighted-graph/
+https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/
+https://www.geeksforgeeks.org/printing-paths-dijkstras-shortest-path-algorithm/
+https://www.geeksforgeeks.org/minimum-cost-path-left-right-bottom-moves-allowed/
+https://www.geeksforgeeks.org/minimum-edges-reverse-make-path-source-destination/
+https://www.geeksforgeeks.org/minimum-edges-required-to-add-to-make-euler-circuit/
+https://www.geeksforgeeks.org/find-the-minimum-cost-to-reach-a-destination-where-every-station-is-connected-in-one-direction/
+https://www.geeksforgeeks.org/traveling-salesman-problem-tsp-implementation/
+https://www.geeksforgeeks.org/travelling-salesman-problem-set-2-approximate-using-mst/
+https://www.geeksforgeeks.org/k-centers-problem-set-1-greedy-approximate-algorithm/
+https://www.geeksforgeeks.org/number-of-triangles-in-a-undirected-graph/
+https://www.geeksforgeeks.org/number-of-triangles-in-directed-and-undirected-graphs/
+https://www.geeksforgeeks.org/print-all-jumping-numbers-smaller-than-or-equal-to-a-given-value/
+https://www.geeksforgeeks.org/construct-graph-given-degrees-vertices/
+https://www.geeksforgeeks.org/two-clique-problem-check-graph-can-divided-two-cliques/
+https://www.geeksforgeeks.org/check-whether-given-degrees-vertices-represent-graph-tree/
+https://www.geeksforgeeks.org/stable-marriage-problem/
+https://www.geeksforgeeks.org/sum-dependencies-graph/
+
+https://www.geeksforgeeks.org/eulerian-path-and-circuit/
+https://www.geeksforgeeks.org/euler-circuit-directed-graph/
